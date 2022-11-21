@@ -4,105 +4,233 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
-    <link rel="stylesheet" href="../css/styles1.css">
-    <link rel="stylesheet" href="../css/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles_bs.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    
     <title>Document</title>
 </head>
-<body class="body">
-    <header class="header head__servicios__movile">
-        <nav class="navbar">
-            <img class="logo" src="../assets/imagenes/logo.png" alt="logo">
-            <div class="contentLinks">
-                <a href="../index.html">inicio</a>
-                <a href="./servicios.html">servicios</a>
-                <a href="./novedades.html">novedades</a>
-                <a href="./nosotras.html">nosotras</a>
-                <a href="./contacto.html">contacto</a>
-                
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="bannerServicios">
-            <div class="bannerServicios__conten">
-                <div class="bannerServicios__conten__text">
-                    <h1>sectores de practica</h1>
-                    <p>rendirse no es una opcion, la abogaciaes una lucha diaria
-                        por la justicia con la que nos enfrentamos dia tras dia </p>
-                </div>    
-            </div>
-            <div class="bannerServicios__img"></div>
-        </section>
-        <section class="nav_servicios">
-            <div class="nav_servicios__lincks">
-                <a href="#laboral">Laboral</a>
-                <a href="#previsional">Previcional</a>
-                <a href="#familia">Familia</a>
-                <a href="#daños">Daños y Perjuicios</a>
-            </div>
-        </section>
-        <section class="servicios">
-            <div class="servicios__cont">
-                <div class="servicios__cont__card">
-                    <img src="../assets/imagenes/laboralMovile.jpg" class="servicios__cont__card--imgMovile" alt="laboral">
-                    <img src="../assets/imagenes/derecho_laboral.jpg" class="servicios__cont__card--imgWeb" alt="laboral">
-                    <div class="servicios__cont__card__info laboral" id="laboral">
-                        <h3> laboral</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora recusandae, adipisci</p>
-                    </div>
-                </div>
-                <div class="servicios__cont__card">
-                    <img src="../assets/imagenes/dañosMobile.jpg" class="servicios__cont__card--imgMovile" alt="daños">
-                    <img src="../assets/imagenes/daños_perjuicios.webp" class="servicios__cont__card--imgWeb" alt="daños">
-                    <div class="servicios__cont__card__info daños_perjuicios" id="daños">
-                        <h3> daños y perjuicios</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora recusandae, adipisci</p>
-                    </div>
-                </div>
-                <div class="servicios__cont__card">
-                    <img src="../assets/imagenes/derecho familiar.jpg" class="servicios__cont__card--imgMovile" alt="familiar">
-                    <img src="../assets/imagenes/derecho_familiar.webp" class="servicios__cont__card--imgWeb" alt="familiar">
-                    <div class="servicios__cont__card__info familiar" id="familia">
-                        <h3> familiar</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora recusandae, adipisci</p>
-                    </div>
-                </div>
-                <div class="servicios__cont__card">
-                    <img src="../assets/imagenes/juvilacionmovile.jpg" class="servicios__cont__card--imgMovile" alt="previsional">
-                    <img src="../assets/imagenes/derecho_previsional.jpg" class="servicios__cont__card--imgWeb" alt="previsional">
-                    <div class="servicios__cont__card__info Previsional" id="previsional">
-                        <h3> Previcional</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora recusandae, adipisci</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__contacto">
-            <h6>La plata Buenos Aires</h6>
-            <h6>Tel:(221) 439-2829</h6>
-            <h6>Email: clientodaiz@cntacto.com</h6>
-            <h6>Copyright © 2022</h6>
+<body class="body body_servicios">
+  <header class="head__servicios__movile">
+           
+    <nav class="navbar navresp-servicios">
+        
+        <img class=" logo" width="40" height="32" src="../assets/imagenes/logo.jpg"></img>
+        
+        <div class="contentLinks contentLinks--novs">
+            <a class="navbar__linck"href="../index.html">inicio</a>
+            <a class="navbar__linck"href="./servicios.html">servicios</a>
+            <a class="navbar__linck"href="./novedades.html">novedades</a>
+            <a class="navbar__linck"href="./nosotras.html">nosotras</a>
+            <a class="navbar__linck"href="./contacto.html">contacto</a>
         </div>
-        <div class="footer__section">
-            <div class="footer__section__firma">
-                <img class="logoFooter" src="../assets/imagenes/logo.png" alt="logo">
-                <h6>ClientoDaiz & Asociados</h6>
+    </nav>
+  </header>
+    
+    <main>
+        <section class="container-fluid ">
+            <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ">
+                  <div class="carousel-item active carousel__bannerServicios ">
+                    <img class="bd-placeholder-img imgCarousel carousel__bannerServicios--in" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+                
+                    <div class="container animate__animated animate__fadeIn  animate__slow">
+                      <div class="carousel-caption text-start">
+                        <h1>Como podemos ayudarle</h1>
+                        <p>Rendirse no es una opcion, la abogaciaes una lucha diaria por la justicia con la que nos enfrentamos dia tras dia</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item carousel__bannerServicios">
+                    <img class="bd-placeholder-img imgCarousel carousel__bannerServicios--info" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
                 
 
-                <div class="footer__lincks">
-                    <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1662524771&extra_1=s%7Cc%7C514612296931%7Ce%7Cfacebook%7C&placement=&creative=514612296931&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1662524771%26adgroupid%3D67039035794%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1000037%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D" target="_blank">
-                        <i class="fa-brands fa-square-facebook footer__lincks--facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                        <i class="fa-brands fa-instagram footer__lincks--instagram"></i>
-                    </a>
-                   
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <h1>Nuestras lineas de contacto</h1>
+                        <p>Tel:(221) 439-2829</p>
+                        <p>Email: clientodaiz@cntacto.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item carousel__bannerServicios">
+                    <img class="bd-placeholder-img imgCarousel carousel__bannerServicios--nosotras" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+                
+                    <div class="container">
+                      <div class="carousel-caption text-end">
+                        <h1>Conozca mas sobre nosotras</h1>
+                        <p><a class="btn btn-secondary" href="./nosotras.html">ver &raquo;</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+       
+        
+        <div class="container ">
+            <div class="row">
+                <a class="col lincks_servicios" href="#laboral">Laboral</a>
+                <a class="col lincks_servicios" href="#previsional">Previcional</a>
+                <a class="col lincks_servicios" href="#familia">Familia</a>
+                <a class="col lincks_servicios" href="#daños">Daños y Perjuicios</a>
+            </div>
+        </div>
+        
+        
+        <section class="container " >
+            <div class="row featurette detalle_servicios">
+              <div class="col-md-7">
+                <div data-aos="zoom-out" data-aos-offset="200" >
+                  <h2 class="featurette-heading fw-normal lh-1" id="laboral">Derecho Laboral <span class="text-muted">Llevamos adelante tus reclamos y defendemos tus derechos en distintas prácticas:</span></h2>
+                  <p class="lead"> 
+                    - Redacción de telegramas laborales (intercambio epistolar);
+                    <br>
+                    - Redacción de Carta Documento;
+                    <br>
+                    - Reclamos ante ART, SRT, y organismos correspondientes;
+                    <br>
+                    - Audiencia ante Ministerio de trabajo, SRT;
+                    <br>
+                    - Accidentes y enfermedades laborales;</p>
+                </div>    
+              </div>
+              <div class="col-md-5 img_servicios">
+                <a href="contacto.html"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="../assets/imagenes/derecho_laboral.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img></a>
+              
+              </div>
+            </div>
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <div data-aos="zoom-out" data-aos-offset="100" data-aos-delay="200">
+                    <h2 class="featurette-heading fw-normal lh-1" id="previcional">Previcional <span class="text-muted">Gestionamos tus trámites ante ANSES e IPS. Cada caso es único.
+
+                      Ofrecemos un asesoramiento personalizado de acuerdo a los intereses de cada cliente para asegurar que obtenga la mejor prestación posible.  </span></h2>
+                    <p class="lead">
+                      - Jubilaciones;
+                      <br>
+                      - Jubilaciones docentes;
+                      <br>
+                      - Jubilaciones a través de moratoria;
+                      <br>
+                      - Pensiones directas y derivadas; 
+                      <br>
+                      - Reajuste de haberes.</p>
+                  </div>    
+                </div>
+                <div class="col-md-5 order-md-1 img_servicios">
+                  <a href="./contacto.html"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="../assets/imagenes/derecho familiar.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img></a>
+                
+                </div>
+              </div>
+          
+              <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <div data-aos="zoom-out" data-aos-offset="100" data-aos-delay="200">
+                    <h2 class="featurette-heading fw-normal lh-1" id="familia">Familia <span class="text-muted">Atendemos los conflictos legales derivados de la convivencia 
+                      , procurando resolver las demandas propias de las relaciones interpersonales. </span></h2>
+                    <p class="lead">- Aumento de cuota y cese de Alimentos;
+
+                      - Alimentos provisorios;
+                      <br>
+                      - Divorcios;
+                      <br>
+                      -Convenios de uniones convivenciales;
+                      <br>
+                      - Compensaciones económicas;
+                      <br>
+                      - Acciones de protección respecto de menores e incapaces;
+                      <br>
+                      - Adopciones;
+                      <br>
+                      - Violencia Familiar;
+
+                    </p>
+                  </div>  
+                </div>
+                <div class="col-md-5 img_servicios">
+                    <a href="./contacto.html"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="../assets/imagenes/derecho_previsional.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img></a>
+                
                 </div>
             </div>
-        </div>    
-    </footer>
+            <hr class="featurette-divider">
+          
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <div data-aos="zoom-out" data-aos-offset="100" data-aos-delay="200">
+                    <h2 class="featurette-heading fw-normal lh-1" id="daños">Daños y Perjuicios <span class="text-muted">Brindamos soluciones jurídicas y estratégicas frente a las necesidades de nuestros clientes</span></h2>
+                    <p class="lead">- Accidentes de tránsito;
+                      - Reparación de daños que atenten contra la integridad física o moral. 
+                      <br>
+                      - Mala praxis y responsabilidad profesional;
+                      <br>
+                      - Reclamos planes autoahorro; 
+                      <br>
+                      - Incumplimiento contractual; etc.
+                    </p>
+                  </div>    
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <a href="./contacto.html"><img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="../assets/imagenes/dañosMobile.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img></a>
+                
+                </div>
+              </div>
+        </section>  
+          <br>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc </p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          
+          <ul class="nav col-md-4 justify-content-end"> 
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="./nosotras.html" class="nav-link px-2 text-muted">Nosotras</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            
+            <li class="nav-item">
+                <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1662524771&extra_1=s%7Cc%7C514612296931%7Ce%7Cfacebook%7C&placement=&creative=514612296931&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1662524771%26adgroupid%3D67039035794%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1000037%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D" target="_blank">
+                    <i class="fa-brands fa-square-facebook footer__lincks--facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                    <i class="fa-brands fa-instagram footer__lincks--instagram"></i>
+                </a>
+            </li>    
+          </ul>
+        </footer>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

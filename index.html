@@ -7,33 +7,31 @@
     <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles_bs.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
     
     <title>clientodaiz</title>
 </head>
 <body class="body">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     
     <header class="header">
-        <nav class="navbar">
-            <img class="logo" src="./assets/imagenes/logo.png" alt="logo">
-            <div class="contentLinks">
-                <a href="index.html">inicio</a>
-                <a href="pages/servicios.html">servicios</a>
-                <a href="pages/novedades.html">novedades</a>
-                <a href="pages/nosotras.html">nosotras</a>
-                <a href="pages/contacto.html">contacto</a>
+           
+        <nav class="navbar navresp_index">
             
+            <img class=" logo" width="40" height="32" src="../assets/imagenes/logo.jpg"></img>
+            
+            <div class="contentLinks ">
+                <a class="navbar__linck"  href="../index.html">inicio</a>
+                <a class="navbar__linck"  href="./pages/servicios.html">servicios</a>
+                <a class="navbar__linck"  href="./pages/novedades.html">novedades</a>
+                <a class="navbar__linck"  href="./pages/nosotras.html">nosotras</a>
+                <a class="navbar__linck"  href="./pages/contacto.html">contacto</a>
             </div>
         </nav>
     </header>
     <main>   
-        
         <section class="bannerInicio">
             <div class="bannerInicio__conten">
                 <h1 >ClientoDaiz</h1>
@@ -42,7 +40,7 @@
                 <a href="pages/contacto.html" class="bannerInicio__contact">inicia</a>
             </div>
         </section>
-        <section class="seccionContacto animate__animated animate__fadeIn  animate__slow">
+        <section class="seccionContacto  animate__animated animate__fadeIn  animate__slow">
             <div class="seccionContacto__info">
                 <h2>Necesitas asesoramiento legal?</h2>
                 <p>Nos renovamos manteniendo intacta nuestra esencia, 
@@ -87,11 +85,9 @@
                     </div> 
                 </a> 
             </div>
-            
         </section>
         <div data-aos="zoom-out">
             <section class="bannerSecundario">
-            
                 <div class="bannerSecundario__conten">
                     <h2>ClientoDaiz</h2>
                     <h4>Acesoramiento legal integral</h4>
@@ -99,12 +95,9 @@
                     <div class="bannerSecundario__conten__linck"><a href="pages/nosotras.html" >quienes somos</a></div>
                 </div>
                 <div class="bannerSecundario__sub">
-                    <h5>subscribase</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                         Dolor itaque dolorum odit debitis perspic</p>
+                    <p>Subscribase a nuestro portal donde se publican noticias, artículos, entrevistas y opinión de profesionales jurídicos: abogados y procuradores, jueces y fiscales, notarios y registradores y vida colegial.</p>
                     <a class="bannerSecundario__sub__btn" href="pages/contacto.html" >suscripción</a> 
                 </div>
-            
             </section>
         </div>
     </main> 
@@ -117,7 +110,7 @@
         </div>
         <div class="footer__section">
             <div class="footer__section__firma">
-                <img class="logoFooter" src="../assets/imagenes/logo.png" alt="logo">
+                <img class="logoFooter" src="../assets/imagenes/logo.jpg" alt="logo">
                 <h6>ClientoDaiz & Asociados</h6>
                 
 
@@ -134,5 +127,10 @@
             </div>
         </div>    
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

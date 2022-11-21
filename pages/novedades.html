@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
-    <link rel="stylesheet" href="../css/styles1.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles_bs.css">
     <title>Document</title>
 </head>
 <body class="body">
@@ -14,13 +15,15 @@
         <header class="header header__novedades">
            
             <nav class="navbar">
-                <img class="logo" src="../assets/imagenes/logo.png" alt="logo">
-                <div class="contentLinks contentLinks--novs">
-                    <a href="../index.html">inicio</a>
-                    <a href="./servicios.html">servicios</a>
-                    <a href="./novedades.html">novedades</a>
-                    <a href="./nosotras.html">nosotras</a>
-                    <a href="./contacto.html">contacto</a>
+                
+                <img class=" logo" width="40" height="32" src="../assets/imagenes/logo.jpg"></img>
+                
+                <div class="contentLinks contentLinks--novs navresp">
+                    <a class="navbar__linck"href="../index.html">inicio</a>
+                    <a class="navbar__linck"href="./servicios.html">servicios</a>
+                    <a class="navbar__linck"href="./novedades.html">novedades</a>
+                    <a class="navbar__linck"href="./nosotras.html">nosotras</a>
+                    <a class="navbar__linck"href="./contacto.html">contacto</a>
                 </div>
             </nav>
         </header>
@@ -37,7 +40,7 @@
                 </div>
                 <img src="../assets/imagenes/novedades.jpg" alt="novedades" class="bannerNov__conten__img">
             </section>
-            <section class="sectionBusqueda">
+            <div class="sectionBusqueda">
                 <div class="sectionBusqueda__text">
                     
                     <p>lo desconocido es el lugar donde se produce el crecimiento</p>
@@ -46,7 +49,7 @@
                     <input type="text"placeholder="busca info aqui" name="buscar"class="sectionBusqueda__input--busqueda">
                     <input type="submit" value="buscar" class="sectionBusqueda__input--btnBusqueda">
                 </div>
-            </section>
+            </div>
             <section class="sectionNoticias">
 
                 <div class="sectionNoticia__noticia">
@@ -94,7 +97,7 @@
             </div>
             <div class="footer__section">
                 <div class="footer__section__firma">
-                    <img class="logoFooter" src="../assets/imagenes/logo.png" alt="logo">
+                    <img class="logoFooter" src="../assets/imagenes/logo.jpg" alt="logo">
                     <h6>ClientoDaiz & Asociados</h6>
                     
     
@@ -111,5 +114,6 @@
             </div>    
         </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
