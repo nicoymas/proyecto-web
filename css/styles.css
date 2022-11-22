@@ -22,30 +22,34 @@
         background-attachment: fixed;
         background-position: center;
         width: 100%;
-        height: 80%;
-        background-color: rgba(158, 158, 158, 0.575);   
+        height: 100%;
+        
     }
     .navresp_index{
-        top:30vh;
+        height: 4rem;
+        background-color: #fdfdfd2b;
         z-index: 1;
-
     }
     .navbar{
-        position: relative;
+        position: absolute;
+        width: 100%;
+        
+        
     }
     .contentLinks{
         position: relative;
         margin-top: -1rem;
         display: flex;
         justify-content: space-around;
-        background-color: rgba(240, 248, 255, 0.599);
+        background-color: rgba(240, 248, 255, 0.342);
         width: 100%;
         height: fit-content;
     }
     .contentLinks a{
         text-decoration: none;
         color: black;
-        font-size: 1.3rem;
+        background-color: #ffffff05;
+        font-size: 0.9rem;
     }
     .logo{
         display: none;
@@ -73,13 +77,14 @@
         display: none;
     }
     .seccionContacto{
-        background-color: #e6b3255e;
+        background-color: #4a3c175a;
         text-align: center;
         padding: 1rem;
         margin: 1rem;
     }
     .seccionContacto__info{
         margin-bottom: 1rem;
+        color: #0000009f;
     }
     .seccionContacto__info h2{
         margin:1rem;
@@ -192,9 +197,13 @@
     .navresp-servicios{
         top:80vh;
         height: 3rem;
+       
     }
     .carousel{
         display: none !important;
+    }
+    .lincks_servicios--resp{
+        display: none !important;;
     }
     .bannerServicios{
         height: 14vh;
@@ -391,7 +400,10 @@
         grid-template-rows: 0% auto  15%;
         
     }
-
+    .navresp--cont{
+        margin-top: 60vh;
+        background-color: #d1d1d1;
+    }
     .header__contacto{
         height: 50vh;
     }
@@ -496,6 +508,7 @@
         margin-bottom:0.5rem ;
         position: relative;
         bottom: 0rem;
+        background-color: #ffffff5c;
     }
     :root {
         --animate-delay: 0.2s;

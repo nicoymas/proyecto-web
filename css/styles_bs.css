@@ -16,6 +16,7 @@
 .logo{
     border-radius: 60%;
 }
+/* SERVICIOS */
 .img_servicios{
     overflow: hidden;
     transition:  0.8s;
@@ -37,6 +38,7 @@
     margin-bottom: 2rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.678) !important;
+    
 }
 
 .servicios__cont__card__info{
