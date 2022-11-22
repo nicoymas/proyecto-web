@@ -243,39 +243,44 @@
     /* NOVEDADES */
     
    
-    .logo{
-        display: none;
-    }
+   
     .bannerNov img{
         display: none;
     }
     .header__novedades{
-        background-image: url(../assets/imagenes/bannerNovedades.jpg);
+        background-image:  linear-gradient(to right top, #0b0b0b9d, #2222228f, #3838389d, #4f4f4f93, #67676788),url(../assets/imagenes/novedades.jpg);
         background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
-        height: 50vh;
+        height: 70vh;
+    }
+    .navresp_novedades{
+        top: 90vh;
     }
     .bannerNov{
         margin-bottom: 1rem;
-        background-color: rgba(0, 0, 255, 0.13);
+        background-color: rgba(0, 0, 0, 0.13);
         text-align: center;
         padding: 1.3rem;
         position: relative;
         top: -15rem;
+        color: #ffffff;
     }
     .bannerNov__conten__text h1{
         font-size: 2.4rem;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     }
     .bannerNov__conten__text p{
         margin: 1rem;
-        font-size:1.3rem ;
+        font-size:1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .bannerInicio__contact{
         text-decoration: none;
         font-size: 1.2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         border:0.3rem;
-        color: black;
+        color: rgba(19, 19, 19, 0.798);
         background-color: aliceblue;
         padding: 0.5rem;
     }
