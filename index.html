@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles_bs.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilosass.css"> 
     
@@ -16,12 +16,12 @@
 </head>
 <body class="body">
     
-    <header class="header">
+    <header class="header ">
            
-        <nav class="navbar navresp_index">
-            
-            <img class=" logo" width="40" height="32" src="../assets/imagenes/logo.jpg"></img>
-            
+        <nav class="navbar ">
+            <a href="index.html">
+                <img class=" logo" width="40" height="32" src="../assets/imagenes/logo.jpg"></img>
+            </a>
             <div class="contentLinks ">
                 <a class="navbar__linck"  href="../index.html">inicio</a>
                 <a class="navbar__linck"  href="./pages/servicios.html">servicios</a>
@@ -29,10 +29,23 @@
                 <a class="navbar__linck"  href="./pages/nosotras.html">nosotras</a>
                 <a class="navbar__linck"  href="./pages/contacto.html">contacto</a>
             </div>
+            <div class="navResp">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle "  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Informacion
+                    </a>
+                    <ul class="dropdown-menu">
+                      <a class="dropdown-item" href="./pages/servicios.html">Servicios</a>
+                      <a class="dropdown-item" href="./pages/novedades.html">Novedades</a>
+                      <a class="dropdown-item" href="./pages/nosotras.html">Nosotras</a>
+                      <a class="dropdown-item" href="./pages/contacto.html">Contacto</a>
+                    </ul>
+                </div>
+            </div>    
         </nav>
     </header>
     <main>   
-        <section class="bannerInicio">
+        <section class="bannerInicio container-fluid">
             <div class="bannerInicio__conten">
                 <h1 >ClientoDaiz</h1>
                 <h4 class="animate__animated animate__fadeIn  animate__slow">Acesoramiento legal integral</h4>
@@ -40,15 +53,15 @@
                 <a href="pages/contacto.html" class="bannerInicio__contact">inicia</a>
             </div>
         </section>
-        <section class="seccionContacto  animate__animated animate__fadeIn  animate__slow">
-            <div class="seccionContacto__info">
+        <section class="container-fluid row justify-content-around seccionContacto animate__animated animate__fadeIn  animate__slow">
+            <div class="col-7 seccionContacto__info">
                 <h2>Necesitas asesoramiento legal?</h2>
                 <p>Nos renovamos manteniendo intacta nuestra esencia, 
                 reputación y experiencia adquirida, afianzando nuestro 
                 compromiso a dar lo mejor en el desempeño de nuestra
                 profesión.</p>
             </div>
-            <div class="seccionContacto__contacto">
+            <div class="col  seccionContacto__contacto  ">
                 <p>Telefono de contacto:(221)4381725</p>
                 <p>Email: ClientoDaiz@estudio.com</p>
             </div>
@@ -101,7 +114,7 @@
             </section>
         </div>
     </main> 
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <div class="footer__contacto">
             <h6>La plata Buenos Aires</h6>
             <h6>Tel:(221) 439-2829</h6>

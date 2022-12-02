@@ -1,0 +1,606 @@
+
+
+@media  (max-width:500px){
+
+    // INDEX
+    .bannerInicio{
+        background-image:linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000) , url("../assets/imagenes/imagen_banner.jpg");
+        @include background-imagenes;
+        color: rgba(231, 231, 231, 0.736);
+        width: 100%;
+        text-align: $center;
+        
+       
+        h1{
+            font-size: $rem+3;
+
+            font-family: map-get($fuentes ,titulos );
+        }
+        h4{
+            font-size: $rem+1;
+            margin-bottom: $rem;
+        }
+        h6{
+            font-size: $rem;
+        }
+        a{
+            display: none;
+        }
+    }
+   
+
+
+    .seccionContacto{
+        .seccionContacto__info{
+            margin-bottom: $rem;
+            color: #0000009f;
+            h2{
+                margin:$rem;
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .sectionAreas{
+        text-align: $center;
+        .sectionAreas__titulo{
+            font-size: 1.7rem;
+            font-family: map-get($fuentes ,titulos );
+        }
+        .sectionAreas__cards{
+            padding: 1.5rem;
+            background-color: rgba(245, 245, 220, 0.393);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: $center;
+            border-style: inset;
+            box-shadow: 60px -16px rgba(32, 33, 33, 0.138);
+            a{
+                color: rgba(0, 0, 0, 0.793);
+                text-decoration: none;
+                margin: 0.7rem;
+                background-color: rgba(88, 88, 88, 0.26);
+                padding: 0.5rem;
+                div{
+                    .sectionAreas__cards__titulo{
+                        margin: 0.5em;
+                        font-size:1.1em ;
+                    }
+                }
+            }
+        }
+    }
+  
+    .bannerSecundario{
+        text-align: $center;
+        background-color: rgba(182, 156, 70, 0.384);
+        display: flex;
+        flex-direction: column;
+        padding: $rem;
+        margin:$rem;
+        .bannerSecundario__conten{
+            margin-bottom: $rem;
+            background-color: rgba(37, 37, 37, 0.252);
+            h6{
+                display:none;
+            }
+            h2{
+                padding-bottom: $rem;
+                font-size: 1.7rem;
+                color:white;
+            }
+            h4{
+                font-size: $rem;
+                color:white;
+            }
+            div{
+                margin: $rem;
+                a{
+                    text-decoration:none ;
+                    color:rgb(26, 26, 26);
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .bannerSecundario__sub{
+            background-color: rgba(37, 37, 37, 0.252);
+            h5{
+                display: none;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            a{
+                text-decoration:none ;
+                color: rgb(26, 26, 26);
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+     
+// ------------------------------------------------------------
+
+
+    /* SERVICIOS */
+
+    
+    .carousel{
+        margin-top: $rem;
+    }
+ 
+    .lincks_servicios--resp{
+        display: none !important;
+    }
+    
+     /* --------------------------------------- */
+    
+    
+    /* CONTACTO */
+    
+  
+
+    .section{
+        height: 40%;
+        .section__form{
+            background-color: rgba(34, 34, 35, 0.26);
+            padding:$rem;
+            margin-top: 5rem;
+            input{
+                height: 2.5rem;
+            }
+            textarea{
+                height: 50%;
+            }
+        }
+        .section__img{
+            background-image: url(../assets/imagenes/escritorio.webp);
+            width: 100%;
+            height: 100%;
+            @include background-imagenes;
+            font-size: 2.5rem;
+            padding-top:$rem+5 ;
+            text-align: $center;
+            color: aliceblue;
+            h6{
+                padding: 0.5rem;
+            }
+        }
+    }
+    
+   
+ }
+
+ @media (min-width:501px){
+    .bannerInicio{
+        background-image:linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000) , url("../assets/imagenes/imagen_banner.jpg");
+        @include background-imagenes;
+        width: 100%;
+        height: 50vh;
+        .bannerInicio__conten{
+            color:aliceblue;
+            padding-top: $rem+2;
+            position:absolute;
+            left: 20%;
+            h1{
+                font-size: 2.4rem;
+                font-family:map-get($fuentes ,titulos );
+            }
+            h2{
+                font-family:map-get($fuentes,font-text);
+            }
+            h6{
+                font-family: map-get($fuentes ,font-general);
+                font-size: large;
+            }
+            h4{
+                padding: $rem;    
+            }
+            .bannerInicio__contact{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                background-color: rgba(119, 119, 119, 0.281);
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                position: fixed;
+                bottom: 6rem;
+                right: 0rem;
+                z-index: 10;
+                transform: rotate(270deg);
+                transition: 1s;
+                &:hover{
+                    background-color: #e6b325b9;
+                }
+            }
+        }
+        
+    }
+  
+    .sectionAreas{
+        .sectionAreas__titulo{
+            background-color: #e7e6e133;
+            text-align: $center;
+            margin: $rem;
+            font-family: map-get($fuentes,font-text);
+        }
+        .sectionAreas__cards{
+            margin: $rem;
+            margin-left: 2.5rem;
+            width: 90%;
+            height: 35vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: $center;
+            align-items: $center;
+            /* flex-wrap: wrap; para que se acomoden en la linea inferior cuando ocupan toda la pantalla  */
+            .sectionAreas__card{
+                text-decoration: none;
+                color: #000000a9;
+                background-color: #ffffff0e;
+                font-size: $rem;
+                text-align: $center;
+                height: 80%;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                overflow: hidden;
+                transition:  0.8s;
+                &:hover{
+                    transform: translate(-0.2rem, -0.1rem);
+                    color:#b7950ba8;
+                }
+                h4{
+                    padding: 0.5rem;
+                }
+                p{
+                    font-size: 0.7rem;
+                }
+                .icon-previcional{
+                    color: #0000009c;
+                }
+                .icon-laboral{
+                    color: #0000009c;
+                }
+                .icon-familiar{
+                    color: #0000009c;
+                }
+                .icon-ver{
+                    color: #0000009c;
+                }
+            }
+        }
+    }
+    
+  
+ 
+    .bannerSecundario{
+        background-color: #e7e7e748;
+        margin-bottom: $rem;
+        padding: $rem;
+        display: flex;
+        flex-direction: row;
+        height: 55vh;
+        justify-content: space-between;
+        .bannerSecundario__conten{
+            background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.webp);
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: $center;
+            align-items: $center;
+            margin-right: $rem;
+            transition: 1s;
+            &:hover{
+                color: #b7950ba8;
+                background-image: linear-gradient(to right top, #b3b3b3e7, #bdbdbdf3, #777777bd, #919191c2, #f2f3de), url(../assets/imagenes/bannerSecundario__image.webp);
+        
+            }
+            h2{
+                font-family: map-get($fuentes ,titulos );
+            }
+            h4{
+                font-family: map-get($fuentes,font-general);
+            }
+            .bannerSecundario__conten__linck {
+                font-family: map-get($fuentes ,titulos );
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                line-height: 1em;
+                margin: 15px 40px;
+                text-transform: uppercase;
+                display: inline-block;
+                list-style: outside none none;
+                margin: 0.5em 0.6em;
+                padding: 12px 15px;
+                position: relative;
+                a {
+                    color: aliceblue;
+                    text-decoration: none;
+                }
+
+        
+            }
+        }
+    }
+  
+    .bannerSecundario__conten__linck :before,
+    .bannerSecundario__conten__linck :after {
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      height: 2px;
+      width: 35%;
+      background-color:#A47E3B;
+      position: absolute;
+      content: '';
+      opacity: 0;
+    
+    
+    }
+    .bannerSecundario__conten__linck :before {
+      top: 0;
+      left: 0;
+    }
+    .bannerSecundario__conten__linck :after {
+      bottom: 0;
+      right: 0;
+    }
+    .bannerSecundario__conten__linck :hover:before,
+    .bannerSecundario__conten__linck .hover:before,
+    .bannerSecundario__conten__linck :hover:after,
+    .bannerSecundario__conten__linck .hover:after {
+      opacity: 1;
+    }
+    .bannerSecundario__conten__linck :hover:before,
+    .bannerSecundario__conten__linck .hover:before {
+      left: 65%;
+    }
+    .bannerSecundario__conten__linck :hover:after,
+    .bannerSecundario__conten__linck .hover:after {
+      right: 65%;
+    }
+    .bannerSecundario__sub{
+        background-image: radial-gradient(circle, #39393980, #5151519f, #6b6b6b8c, #85858581, #a1a1a160);
+        display: flex;
+        flex-direction: column;
+        justify-content: $center;
+        align-items: $center;
+        width: 30%;
+        
+        p{
+            font-size: 0.7rem;
+            margin: 0.5rem;
+            color: #000000b2;
+            font-family:map-get($fuentes,font-text);
+        }
+        .bannerSecundario__sub__btn {
+            background-color: #505050c9;
+            border: none;
+            text-decoration: none;
+            color: #ffffffb9;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 0.5em;
+            font-size: 0.5rem;
+            font-family:map-get($fuentes, font-general) ;
+            line-height:0.1em;
+            margin: $rem 4rem;
+            outline: none;
+            padding: 0.5rem 2rem 0.5rem;
+            position: relative;
+            text-transform: uppercase;
+            text-align: $center;
+          }
+    }
+
+
+      .bannerSecundario__sub__btn:before,
+      .bannerSecundario__sub__btn:after {
+        border-color: transparent;
+        -webkit-transition: all 0.25s;
+        transition: all 0.25s;
+        border-style: solid;
+        border-width: 0;
+        content: "";
+        height: 0.5rem;
+        position: absolute;
+        width: 0.5rem;
+      }
+
+      .bannerSecundario__sub__btn:before {
+        border-color: aliceblue;
+        border-left-width: 0.1rem;
+        border-top-width: 0.1rem;
+        left: -0.3rem;
+        top: -0.3rem;
+      }
+
+      .bannerSecundario__sub__btn:after {
+        border-bottom-width: 0.1rem;
+        border-color: aliceblue;
+        border-right-width: 0.1rem;
+        bottom: -0.3rem;
+        right: -0.3rem;
+      }
+
+      .bannerSecundario__sub__btn:hover,
+      .bannerSecundario__sub__btn.hover {
+        background-color: #bdbdbdd8;
+      }
+
+      .bannerSecundario__sub__btn:hover:before,
+      .bannerSecundario__sub__btn.hover:before,
+      .bannerSecundario__sub__btn:hover:after,
+      .bannerSecundario__sub__btn.hover:after {
+        height: 100%;
+        width: 100%;
+      }
+
+      
+    //----------------------------------------------------------  
+
+   
+    /* CONTACTO */
+    .g-Cont{
+       
+        background-image: url(../assets/imagenes/justicia.jpg);
+        @include background-imagenes;
+    }
+    
+
+    .section{
+        background-color: #f0a4001c;
+        padding: 2rem;
+        .section__img{
+            background-image:linear-gradient(to right top, #28282895, #00000091, #f0a40034, #4f4e4ec2, #5f5f5f), url(../assets/imagenes/escritorio.webp);
+            margin: 2rem;
+            height: 30vh;
+            @include background-imagenes;
+            text-align: $center;
+        }
+        h6{
+            padding: 0.2rem;
+            font-size: $rem;
+            margin-top: 0.5rem;
+            color:aliceblue;
+        }
+    }
+    
+    
+
+    .section__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin:$rem;
+        background-color: rgba(0, 0, 0, 0.303);
+        padding: 2rem;
+        textarea {
+            margin-top: 2rem;
+        }
+        .section__form__label{
+            margin: $rem;
+            color: rgb(255, 255, 255);
+            font-family:map-get($fuentes,font-text);
+        }
+        input{
+            background-color: rgba(240, 255, 255, 0.603);
+            border-style: none;
+        }
+    }
+    
+
+    
+}    
+
+  
+
+// -----------------------------------------------------------
+
+// NOSOTRAS
+
+
+.nosotras--firma{
+    background-color:rgba(47, 47, 47, 0.46);
+    color: aliceblue;
+    transition: 0.8s;
+    .nosotras{
+        text-align: $center;
+    }
+    &:hover{
+        background-color: rgba(109, 87, 0, 0.764);
+    }
+}
+.detalle_abog{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    .img_abogados{
+        overflow: hidden;
+        transition:  0.8s;
+        &:hover{
+        transform: translate(-0.2rem, -0.1rem);
+        background-color: rgba(109, 87, 0, 0.45)
+        }
+    }
+}
+
+
+// ---------------------------------------------------------------------------
+
+/* SERVICIOS */
+
+.detalle_servicios{
+    margin-top: 10rem;
+    .img_servicios{
+        overflow: hidden;
+        transition:  0.8s;
+        &:hover{
+            transform: translate(-0.2rem, -0.1rem);
+            background-color: rgba(11, 12, 12, 0.176);
+        }
+    }
+}
+
+.lincks_servicios{
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.678) !important;
+    
+}
+
+
+.carousel__bannerServicios{
+    height:50vh;
+    .carousel__bannerServicios--in{
+        background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/imagen_banner.jpg);
+    }
+    .carousel__bannerServicios--info{
+        background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/servicios_contacto.jpg);
+    }
+    .carousel__bannerServicios--nosotras{
+        background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.webp);
+        
+    }
+    .imgCarousel{
+        @include background-imagenes
+    }
+    
+}
+
+// -----------------------------------------
+
+// INDEX BS
+
+.seccionContacto__info{
+    background-color: rgba(59, 59, 59, 0.589);
+    overflow: hidden;
+    padding: 2rem;
+    color:aliceblue;
+    margin: $rem;
+    width: 65%;
+    h2{
+        margin:0.5rem;
+        font-size: 1.4em;
+        font-family: map-get($fuentes ,titulos );
+    }
+    p{
+        font-family: map-get($fuentes , font-general );
+        font-size: 0.7em;
+    }
+}
+
+.seccionContacto__contacto{
+    width: 35%;
+    background-color: #ae9b6098;
+    text-align: $center;
+    padding: 0.5rem;
+    margin: $rem;
+    p{
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        font-family:map-get($fuentes,font-text);
+    }
+}

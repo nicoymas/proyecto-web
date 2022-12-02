@@ -1,0 +1,184 @@
+
+
+
+@media  (max-width:500px){ 
+    .bannerNov img{
+        display: none;
+    }
+    .bannerNov{
+        background-image:  linear-gradient(to right top, #0b0b0b9d, #2222228f, #3838389d, #4f4f4f93, #67676788),url(../assets/imagenes/novedades.jpg);
+        @include background-imagenes;
+        text-align: $center;
+        padding: 1.3rem;
+        position: relative;
+        color: #ffffff;
+        .bannerNov__conten{
+            .bannerNov__conten__text{
+                h1{
+                    font-size: 2.4rem;
+                    font-family:map-get($fuentes,titulos);
+                }
+                p{
+                    margin: 1rem;
+                    font-size:1.3rem;
+                    font-family:map-get($fuentes,font-text);
+                }
+                .bannerInicio__contact{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-family: map-get($fuentes,font-general);
+                    border:0.3rem;
+                    color: rgba(19, 19, 19, 0.798);
+                    background-color: aliceblue;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+   
+    .sectionBusqueda{
+        position: relative;
+        top: -5rem;
+        .sectionBusqueda__text{
+            display: none;
+        }
+        .sectionBusqueda__input{
+            input{
+                height: 2rem;
+                border-radius: 10%;
+            }
+            .sectionBusqueda__input--btnBusqueda{
+                width: 30%;
+            }
+            .sectionBusqueda__input--busqueda{
+                width: 55%;
+            }
+        }
+    }
+    
+    .sectionNoticias{
+        background-color: rgba(47, 47, 47, 0.155);
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: $center;
+        .sectionNoticia__noticia{
+            display:flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            margin: 1rem;
+            padding: 1rem;
+            img{
+                width: 100%;
+            }
+        }
+        h5{
+            padding: 1.5rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+@media (min-width:501px){
+    
+    .navResp{
+        display: none;
+    }
+    
+    .sectionNoticia__noticia img{
+        display: none;
+    }
+    .bannerNov{
+        background-color: #f0a40080;
+        display: flex;
+        flex-direction: row;
+    }
+    .bannerNov__conten__img{
+        object-fit: cover;
+        background-size: cover;
+        background-position: $center;
+        height: 60vh;
+        width: 40%;
+    }
+    .sub{
+        bottom: 7rem;
+        right:-1rem ;
+    }
+    .bannerNov__conten{
+        background-color: rgba(85, 85, 87, 0.75);
+      
+    }
+    .bannerNov__conten__text{
+        color: rgb(255, 255, 255);
+        text-align: $center;
+        margin-top: 20%;
+    }
+    .bannerNov__conten__text p{
+        margin: 2rem;
+
+    }
+    .sectionBusqueda{
+        background-color:#ffc847da;
+        
+        width: 60vh;
+        padding: 1rem;
+    }
+    .sectionBusqueda__text{
+        background-color: #e9840173;
+        width: 20rem;
+        height: 5rem;
+        margin: 2rem;
+        position: absolute;
+        left: 80vh;
+        top:20rem;
+        padding:1rem;
+        text-align: $center;
+    }
+    .sectionNoticias{
+        position:relative;
+        left: 4.5%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: $center;
+        align-items: $center;
+
+    }
+    .sectionNoticia__noticia{
+        border:1px inset ;
+    }
+    .sectionNoticias{
+        padding: 1rem;
+    }
+    .sectionNoticias div{
+        background-color:rgba(245, 245, 220, 0.521);
+        border-style: inset;
+        margin:1rem;
+
+    }
+
+    .sectionNoticias div h5{
+        margin:1em;
+        padding:1em;
+        width: 94%;
+        height: 10rem;
+        font-size: larger;
+        color:rgba(0, 0, 0, 0.795)
+    }
+    .sectionNoticias div p{
+        margin: 2rem;
+        text-align: $center;
+    } 
+    .sectionNoticias__titulo1{
+        background-image: url(../assets/imagenes/perro-gato.webp);
+        @include background-imagenes;
+    }
+    .sectionNoticias__titulo2{
+        background-image: url(../assets/imagenes/jubilacion.jpg);
+        @include background-imagenes;
+    }
+    .sectionNoticias__titulo3{
+        background-image: url(../assets/imagenes/indemnizacion.png);
+        @include background-imagenes;
+    } 
+    
+}

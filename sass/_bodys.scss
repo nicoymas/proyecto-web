@@ -1,0 +1,16 @@
+@import"variables";
+
+
+@media  (max-width:500px){
+    .body{
+        background-image: url(../assets/imagenes/fondogeneral.jpg);
+        justify-content: $center; 
+    }
+}
+@media (min-width:501px){
+    .body{
+        background-image: url(../assets/imagenes/fondogeneral.jpg) ;
+        @include background-imagenes
+        
+    }
+}
