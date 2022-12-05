@@ -59,12 +59,9 @@
     .sectionNoticias{
         background-color: rgba(47, 47, 47, 0.155);
         margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-items: $center;
+        @include display_direction_conten;
         .sectionNoticia__noticia{
-            display:flex;
-            flex-direction: column;
+            @include display_direction_conten;
             background-color: aliceblue;
             margin: 1rem;
             padding: 1rem;
@@ -89,13 +86,10 @@
     }
     .bannerNov{
         background-color: #f0a40080;
-        display: flex;
-        flex-direction: row;
+        @include display_direction_conten(row ,none)
     }
     .bannerNov__conten__img{
-        object-fit: cover;
-        background-size: cover;
-        background-position: $center;
+       @include background-imagenes(local);
         height: 60vh;
         width: 40%;
     }
@@ -137,18 +131,14 @@
         position:relative;
         left: 4.5%;
         width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: $center;
-        align-items: $center;
+       @include display_direction_conten;
+        padding: 1rem;
 
     }
     .sectionNoticia__noticia{
         border:1px inset ;
     }
-    .sectionNoticias{
-        padding: 1rem;
-    }
+  
     .sectionNoticias div{
         background-color:rgba(245, 245, 220, 0.521);
         border-style: inset;
@@ -169,16 +159,16 @@
         text-align: $center;
     } 
     .sectionNoticias__titulo1{
-        background-image: url(../assets/imagenes/perro-gato.webp);
-        @include background-imagenes;
+        background-image: url(../assets/imagenes/perro-gatoWeb.jpg);
+        @include background-imagenes(local);
     }
     .sectionNoticias__titulo2{
         background-image: url(../assets/imagenes/jubilacion.jpg);
-        @include background-imagenes;
+        @include background-imagenes(local);
     }
     .sectionNoticias__titulo3{
         background-image: url(../assets/imagenes/indemnizacion.png);
-        @include background-imagenes;
+        @include background-imagenes(local);
     } 
     
 }

@@ -9,11 +9,29 @@
 @media (max-width: 500px) {
   .body {
     background-image: url(../assets/imagenes/fondogeneral.jpg);
-    justify-content: center; } }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover; }
+  .body_contacto {
+    background-image: linear-gradient(to right top, #c1d0fb5a, #9da4c83c), url(../assets/imagenes/rsz_fondo_contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover; } }
 
 @media (min-width: 501px) {
   .body {
-    background-image: url(../assets/imagenes/fondogeneral.jpg);
+    background-image: url(../assets/imagenes/fondogeneralWeb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover; }
+  .body_contacto {
+    background-image: linear-gradient(to right top, #c1d0fb5a, #9da4c83c), url(../assets/imagenes/fondo_contacto.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,8 +62,7 @@
     .header .logo {
       position: relative;
       bottom: 0.5rem;
-      height: 2.5rem;
-      border-radius: 60%; }
+      height: 2.5rem; }
     .header .contentLinks {
       display: flex;
       flex-direction: row;
@@ -82,7 +99,7 @@
 
 @media (max-width: 500px) {
   .bannerInicio {
-    background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/imagen_banner.jpg");
+    background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/rsz_imagen_banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,10 +150,11 @@
           margin: 0.5em;
           font-size: 1.1em; }
   .bannerSecundario {
+    background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.jpg);
     text-align: center;
-    background-color: rgba(182, 156, 70, 0.384);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 1rem;
     margin: 1rem; }
     .bannerSecundario .bannerSecundario__conten {
@@ -168,6 +186,20 @@
         color: #1a1a1a;
         font-size: 1.5rem; }
   /* SERVICIOS */
+  .carousel__bannerServicios {
+    height: 50vh; }
+    .carousel__bannerServicios .carousel__bannerServicios--in {
+      background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/rsz_imagen_banner.jpg); }
+    .carousel__bannerServicios .carousel__bannerServicios--info {
+      background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/servicios_contactomobile.jpg); }
+    .carousel__bannerServicios .carousel__bannerServicios--nosotras {
+      background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.jpg); }
+    .carousel__bannerServicios .imgCarousel {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      object-fit: cover; }
   .carousel {
     margin-top: 1rem; }
   .lincks_servicios--resp {
@@ -202,7 +234,7 @@
 
 @media (min-width: 501px) {
   .bannerInicio {
-    background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/imagen_banner.jpg");
+    background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/imagenbanner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,10 +279,8 @@
     height: 35vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; para que se acomoden en la linea inferior cuando ocupan toda la pantalla  */ }
+    flex-wrap: nowrap; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card {
       text-decoration: none;
       color: #000000a9;
@@ -283,10 +313,10 @@
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    height: 55vh;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: 55vh; }
     .bannerSecundario .bannerSecundario__conten {
-      background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.webp);
+      background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__imageWeb.jpg);
       width: 70%;
       display: flex;
       flex-direction: column;
@@ -296,7 +326,7 @@
       transition: 1s; }
       .bannerSecundario .bannerSecundario__conten:hover {
         color: #b7950ba8;
-        background-image: linear-gradient(to right top, #b3b3b3e7, #bdbdbdf3, #777777bd, #919191c2, #f2f3de), url(../assets/imagenes/bannerSecundario__image.webp); }
+        background-image: linear-gradient(to right top, #b3b3b3e7, #bdbdbdf3, #777777bd, #919191c2, #f2f3de), url(../assets/imagenes/bannerSecundario__imageWeb.jpg); }
       .bannerSecundario .bannerSecundario__conten h2 {
         font-family: "Playfair Display"; }
       .bannerSecundario .bannerSecundario__conten .bannerSecundario__conten__linck {
@@ -401,17 +431,15 @@
     height: 100%;
     width: 100%; }
   /* CONTACTO */
-  .g-Cont {
-    background-image: url(../assets/imagenes/justicia.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover; }
-  .section {
+  .section_contacto {
     background-color: #f0a4001c;
     padding: 2rem; }
-    .section .section__img {
+    .section_contacto .titulo_contacto {
+      padding: 1rem;
+      color: #ffffffb4;
+      text-align: center;
+      background-color: #d5a128a0; }
+    .section_contacto .section__img {
       background-image: linear-gradient(to right top, #28282895, #00000091, #f0a40034, #4f4e4ec2, #5f5f5f), url(../assets/imagenes/escritorio.webp);
       margin: 2rem;
       height: 30vh;
@@ -421,7 +449,7 @@
       background-attachment: fixed;
       object-fit: cover;
       text-align: center; }
-    .section h6 {
+    .section_contacto h6 {
       padding: 0.2rem;
       font-size: 1rem;
       margin-top: 0.5rem;
@@ -479,11 +507,11 @@
 .carousel__bannerServicios {
   height: 50vh; }
   .carousel__bannerServicios .carousel__bannerServicios--in {
-    background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/imagen_banner.jpg); }
+    background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/imagenbanner.jpg); }
   .carousel__bannerServicios .carousel__bannerServicios--info {
     background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/servicios_contacto.jpg); }
   .carousel__bannerServicios .carousel__bannerServicios--nosotras {
-    background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.webp); }
+    background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__imageWeb.jpg); }
   .carousel__bannerServicios .imgCarousel {
     background-size: cover;
     background-position: center;
@@ -559,10 +587,11 @@
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    justify-items: center; }
+    justify-content: center; }
     .sectionNoticias .sectionNoticia__noticia {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       background-color: aliceblue;
       margin: 1rem;
       padding: 1rem; }
@@ -580,11 +609,14 @@
   .bannerNov {
     background-color: #f0a40080;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: none; }
   .bannerNov__conten__img {
-    object-fit: cover;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    object-fit: cover;
     height: 60vh;
     width: 40%; }
   .sub {
@@ -619,11 +651,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    padding: 1rem; }
   .sectionNoticia__noticia {
     border: 1px inset; }
-  .sectionNoticias {
-    padding: 1rem; }
   .sectionNoticias div {
     background-color: rgba(245, 245, 220, 0.521);
     border-style: inset;
@@ -639,25 +669,25 @@
     margin: 2rem;
     text-align: center; }
   .sectionNoticias__titulo1 {
-    background-image: url(../assets/imagenes/perro-gato.webp);
+    background-image: url(../assets/imagenes/perro-gatoWeb.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     object-fit: cover; }
   .sectionNoticias__titulo2 {
     background-image: url(../assets/imagenes/jubilacion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     object-fit: cover; }
   .sectionNoticias__titulo3 {
     background-image: url(../assets/imagenes/indemnizacion.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     object-fit: cover; } }
 
 @media (max-width: 500px) {
@@ -693,8 +723,6 @@
       padding-top: 1.5rem;
       justify-content: space-between; }
       .footer .footer__section .footer__section__firma .logoFooter {
-        background-color: aliceblue;
-        border-radius: 30rem;
         height: auto;
         width: 1.5rem;
         margin: 1rem; }

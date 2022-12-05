@@ -15,14 +15,3 @@ $fuentes:(
 $rem: 1rem; 
 
 
-// HACER ARCHIVO APARTE PARA MIXINS
-
-
-@mixin background-imagenes($object-fit:$cover, $tipo:$fixed) {
-    background-size:$cover;
-    background-position:$center;
-    background-repeat:$no-repeat;
-    background-attachment: $tipo;
-    object-fit: $object-fi;
-    
-}
