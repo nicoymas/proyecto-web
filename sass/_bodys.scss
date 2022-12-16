@@ -1,0 +1,27 @@
+@import"variables";
+
+
+@media  (max-width:500px){
+    .body{
+        background-image: url(../assets/imagenes/fondogeneral.jpg);
+        @include background-imagenes;
+    }
+    .body_contacto{
+        background-image: linear-gradient(to right top, #c1d0fb5a, #9da4c83c), url(../assets/imagenes/rsz_fondo_contacto.jpg);
+        @include background-imagenes
+        
+    }
+    
+}
+@media (min-width:501px){
+    .body{
+        background-image: url(../assets/imagenes/fondogeneralWeb.jpg) ;
+        @include background-imagenes
+        
+    }
+    .body_contacto{
+        background-image: linear-gradient(to right top, #c1d0fb5a, #9da4c83c), url(../assets/imagenes/fondo_contacto.jpg);
+        @include background-imagenes
+        
+    }
+}
