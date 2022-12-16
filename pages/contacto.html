@@ -34,7 +34,7 @@
                       Informacion
                     </a>
                     <ul class="dropdown-menu">
-                      <a class="dropdown-item" href="../index.html">Inicio</a>
+                        <a class="dropdown-item" href="../index.html">Index</a>
                       <a class="dropdown-item" href="./servicios.html">Servicios</a>
                       <a class="dropdown-item" href="./novedades.html">Novedades</a>
                       <a class="dropdown-item" href="./nosotras.html">Nosotras</a>
@@ -46,25 +46,21 @@
     </header>
     <main>
         <section class="section_contacto container">
+            
             <h1 class="titulo_contacto">ClientoDaiz & Asociados</h1>
-            <div class="section__img container-fluid">
+            <div class="section__img">
                 <h2>La plata Buenos Aires</h2>
                 <h2>Email: clientodaiz@cntacto.com</h2>
                 <h2>Tel:(221) 439-2829</h2>
             </div>
-            <form action="" id="form">
-                <div class="mb-3">
-                    <input type="text" class="form-control"  placeholder="Nombre completo" required>
-                    <input type="email" class="form-control"  placeholder="name@example.com" required>
-                    <input type="number" class="form-control"  placeholder="D.N.I" required>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="submit" value ="enviar" id="subContact" >E
-                    nviar</button>
-            </form> 
+            <form action="" class="section__form container">
+                <input type="text" name="nombre" placeholder="nombre completo" id="nombre" required >
+                <input type="email" name="email" placeholder="ingrese email" id="email" required>
+                <input type="number" name="documento" placeholder="DNI" id="documento" required>
+                <label class="section__form__label" for="cometario">sobre su consulta</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" ></textarea>
+                <input type="submit" class="submit" value ="enviar">
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -92,8 +88,8 @@
             </div>
         </div>    
     </footer>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/alert.js"></script>
+    <script src="../js/alerta.js"></script>
+    
     <script src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

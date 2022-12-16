@@ -200,8 +200,35 @@
       object-fit: cover; }
   .carousel {
     margin-top: 1rem; }
+  .lincks_servicios--resp {
+    display: none !important; }
   /* --------------------------------------- */
-  /* CONTACTO */ }
+  /* CONTACTO */
+  .section {
+    height: 40%; }
+    .section .section__form {
+      background-color: rgba(34, 34, 35, 0.26);
+      padding: 1rem;
+      margin-top: 5rem; }
+      .section .section__form input {
+        height: 2.5rem; }
+      .section .section__form textarea {
+        height: 50%; }
+    .section .section__img {
+      background-image: url(../assets/imagenes/escritorio.webp);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      object-fit: cover;
+      font-size: 2.5rem;
+      padding-top: 6rem;
+      text-align: center;
+      color: aliceblue; }
+      .section .section__img h6 {
+        padding: 0.5rem; } }
 
 @media (min-width: 501px) {
   .bannerInicio {
@@ -219,13 +246,11 @@
       position: absolute;
       left: 20%; }
       .bannerInicio .bannerInicio__conten h1 {
-        font-size: 6rem; }
-      .bannerInicio .bannerInicio__conten h3 {
-        font-family: "Roboto";
+        font-size: 2.4rem; }
+      .bannerInicio .bannerInicio__conten h6 {
         font-size: large; }
-      .bannerInicio .bannerInicio__conten h2 {
-        padding: 1rem;
-        font-family: "Roboto"; }
+      .bannerInicio .bannerInicio__conten h4 {
+        padding: 1rem; }
       .bannerInicio .bannerInicio__conten .bannerInicio__contact {
         text-decoration: none;
         color: black;
@@ -398,31 +423,46 @@
   .bannerSecundario__sub__btn:hover:after,
   .bannerSecundario__sub__btn.hover:after {
     height: 100%;
-    width: 100%; } }
-
-/* CONTACTO */
-.section_contacto {
-  background-color: #f0a4001c;
-  padding: 2rem; }
-  .section_contacto .titulo_contacto {
-    padding: 1rem;
-    color: #ffffffb4;
-    text-align: center;
-    background-color: #d5a128a0; }
-  .section_contacto .section__img {
-    background-image: linear-gradient(to right top, #28282895, #00000091, #f0a40034, #4f4e4ec2, #5f5f5f), url(../assets/imagenes/escritorio.webp);
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
-    text-align: center; }
-  .section_contacto h6 {
-    padding: 0.2rem;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: aliceblue; }
+    width: 100%; }
+  /* CONTACTO */
+  .section_contacto {
+    background-color: #f0a4001c;
+    padding: 2rem; }
+    .section_contacto .titulo_contacto {
+      padding: 1rem;
+      color: #ffffffb4;
+      text-align: center;
+      background-color: #d5a128a0; }
+    .section_contacto .section__img {
+      background-image: linear-gradient(to right top, #28282895, #00000091, #f0a40034, #4f4e4ec2, #5f5f5f), url(../assets/imagenes/escritorio.webp);
+      margin: 2rem;
+      height: 30vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      object-fit: cover;
+      text-align: center; }
+    .section_contacto h6 {
+      padding: 0.2rem;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: aliceblue; }
+  .section__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.303);
+    padding: 2rem; }
+    .section__form textarea {
+      margin-top: 2rem; }
+    .section__form .section__form__label {
+      margin: 1rem;
+      color: white; }
+    .section__form input {
+      background-color: rgba(240, 255, 255, 0.603);
+      border-style: none; } }
 
 .nosotras--firma {
   background-color: rgba(47, 47, 47, 0.46);
@@ -445,7 +485,7 @@
 
 /* SERVICIOS */
 .detalle_servicios {
-  margin-top: 5rem; }
+  margin-top: 10rem; }
   .detalle_servicios .img_servicios {
     overflow: hidden;
     transition: 0.8s; }
@@ -453,16 +493,10 @@
       transform: translate(-0.2rem, -0.1rem);
       background-color: rgba(11, 12, 12, 0.176); }
 
-.areas {
-  text-align: center; }
-
-.areas_sub {
-  background-color: #96906c5b;
-  margin: 1rem;
-  color: rgba(29, 28, 28, 0.796); }
-
-.areas_p {
-  color: #000000b9; }
+.lincks_servicios {
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.678) !important; }
 
 .carousel__bannerServicios {
   height: 50vh; }
