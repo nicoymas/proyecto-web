@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Noticia+Text&family=Playfair+Display:ital,wght@1,500&family=Roboto:ital@1&family=Source+Serif+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Noticia+Text&family=Playfair+Display:ital,wght@1,500&family=Roboto:ital@1&family=Source+Serif+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Noticia+Text&family=Playfair+Display:ital,wght@1,500&family=Roboto:ital@1&family=Source+Serif+Pro:wght@300&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?familia =Abhaya + Libre: wght @ 500&familia =Cormorán + Garamond: wght @ 600&familia =Noticia + Texto&familia =Playfair + Pantalla: ital, wght @ 1,500&familia =Roboto: ital @ 1&familia =Fuente + Serif + Pro: wght @ 300&mostrar = swap ");
+@import url("https://fonts.googleapis.com/css2?familia =Abhaya + Libre: wght @ 500&familia =Cormorán + Garamond: wght @ 600&familia =Noticia + Texto&familia =Playfair + Pantalla: ital, wght @ 1,500&familia =Roboto: ital @ 1&familia =Fuente + Serif + Pro: wght @ 300&mostrar = swap ");
+@import url("https://fonts.googleapis.com/css2?familia =Abhaya + Libre: wght @ 500&familia =Cormorán + Garamond: wght @ 600&familia =Noticia + Texto&familia =Playfair + Pantalla: ital, wght @ 1,500&familia =Roboto: ital @ 1&familia =Fuente + Serif + Pro: wght @ 300&mostrar = swap ");
+@import url("https://fonts.googleapis.com/css2?familia =Abhaya + Libre: wght @ 500&familia =Cormorán + Garamond: wght @ 600&familia =Noticia + Texto&familia =Playfair + Pantalla: ital, wght @ 1,500&familia =Roboto: ital @ 1&familia =Fuente + Serif + Pro: wght @ 300&mostrar = swap ");
 * {
   margin: 0;
   padding: 0;
@@ -138,7 +140,7 @@
         font-size: 1.5rem; }
   /* SERVICIOS */
   .carousel__bannerServicios {
-    height: 50vh; }
+    height: 60vh; }
     .carousel__bannerServicios .carousel__bannerServicios--in {
       background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/rsz_imagen_banner.jpg); }
     .carousel__bannerServicios .carousel__bannerServicios--info {
@@ -188,7 +190,11 @@
       .bannerSecundario .bannerSecundario__conten:hover {
         color: #b7950ba8;
         background-image: linear-gradient(to right top, #b3b3b3e7, #bdbdbdf3, #777777bd, #919191c2, #f2f3de), url(../assets/imagenes/bannerSecundario__imageWeb.jpg); }
+      .bannerSecundario .bannerSecundario__conten h2 {
+        font-family: "Roboto";
+        font-size: 3rem; }
       .bannerSecundario .bannerSecundario__conten .bannerSecundario__conten__linck {
+        font-family: "Roboto";
         font-size: 18px;
         letter-spacing: 1.5px;
         line-height: 1em;
@@ -235,11 +241,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%; }
+    width: 30%;
+    transition: 0.5s; }
+    .bannerSecundario__sub:hover {
+      background-color: #ffffff; }
     .bannerSecundario__sub p {
-      font-size: 0.7rem;
-      margin: 0.5rem;
-      color: #000000b2; }
+      font-size: 1rem;
+      margin: 0.8rem;
+      text-align: center;
+      color: #000000ce;
+      transition: 0.8s; }
+      .bannerSecundario__sub p:hover {
+        font-size: 1.1rem;
+        color: #000000; }
     .bannerSecundario__sub .bannerSecundario__sub__btn {
       background-color: #505050c9;
       border: none;
@@ -247,8 +261,7 @@
       color: #ffffffb9;
       cursor: pointer;
       display: inline-block;
-      font-size: 0.5em;
-      font-size: 0.5rem;
+      font-size: 1rem;
       line-height: 0.1em;
       margin: 1rem 4rem;
       outline: none;
@@ -312,33 +325,76 @@
   .bannerInicio .bannerInicio__conten {
     color: aliceblue;
     padding-top: 3rem;
-    position: absolute;
-    left: 20%; }
+    text-align: center;
+    transition: 1s;
+    width: 80%;
+    height: 90%; }
+    .bannerInicio .bannerInicio__conten:hover {
+      background-color: #0000006e; }
     .bannerInicio .bannerInicio__conten h1 {
-      font-size: 2.4rem; }
+      font-size: 4rem;
+      font-family: "Roboto"; }
     .bannerInicio .bannerInicio__conten h6 {
       font-size: large; }
     .bannerInicio .bannerInicio__conten h4 {
       padding: 1rem; }
     .bannerInicio .bannerInicio__conten .bannerInicio__contact {
       text-decoration: none;
-      color: black;
-      background-color: rgba(119, 119, 119, 0.281);
+      color: #fffbfb;
+      background-color: rgba(119, 119, 119, 0.483);
       border-radius: 0.5rem;
+      width: 9rem;
       padding: 0.5rem;
       position: fixed;
       bottom: 6rem;
-      right: 0rem;
+      right: -2rem;
       z-index: 10;
       transform: rotate(270deg);
       transition: 1s; }
       .bannerInicio .bannerInicio__conten .bannerInicio__contact:hover {
         background-color: #e6b325b9; }
 
-.sectionAreas .sectionAreas__titulo {
-  background-color: #e7e6e133;
+.seccionContacto__info {
+  background-color: rgba(59, 59, 59, 0.589);
+  overflow: hidden;
+  padding: 2rem;
+  color: aliceblue;
+  margin: 1rem;
+  width: 65%; }
+  .seccionContacto__info h2 {
+    margin: 0.5rem;
+    font-size: 1.9rem;
+    font-family: "Roboto"; }
+  .seccionContacto__info p {
+    font-size: 1rem; }
+
+.seccionContacto__contacto {
+  width: 35%;
+  background-color: #ae9a6047;
   text-align: center;
-  margin: 1rem; }
+  padding: 0.5rem;
+  padding-top: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .seccionContacto__contacto a {
+    text-decoration: none;
+    color: #000000c0;
+    font-size: 1.3rem;
+    transition: 0.5s; }
+    .seccionContacto__contacto a:hover {
+      transform: translate(-0.1rem, -0.1rem);
+      background-color: #ae9a607b;
+      color: #000000; }
+
+.sectionAreas .sectionAreas__titulo {
+  background-color: #e7e6e154;
+  text-align: center;
+  margin: 1rem;
+  margin-top: 5rem;
+  font-family: "Roboto";
+  font-size: 2.6rem; }
 
 .sectionAreas .sectionAreas__cards {
   margin: 1rem;
@@ -350,8 +406,8 @@
   flex-wrap: wrap; }
   .sectionAreas .sectionAreas__cards .sectionAreas__card {
     text-decoration: none;
-    color: #000000a9;
-    background-color: #ffffff0e;
+    color: #000000c6;
+    background-color: #ffffff21;
     font-size: 1rem;
     text-align: center;
     height: 80%;
@@ -360,14 +416,17 @@
     overflow: hidden;
     transition: 0.8s; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card:hover {
+      background-color: #00000015;
       transform: translate(-0.2rem, -0.1rem);
       color: #b7950ba8; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card h4 {
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      font-family: "Roboto";
+      font-size: 1.5rem; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card p {
-      font-size: 0.7rem; }
+      font-size: 1rem; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-previcional {
-      color: #0000009c; }
+      color: #000000aa; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-laboral {
       color: #0000009c; }
     .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-familiar {
@@ -383,9 +442,10 @@
     padding: 1rem;
     color: #ffffffb4;
     text-align: center;
-    background-color: #00000031; }
+    background-color: #00000031;
+    font-family: "Roboto"; }
   .section_contacto .section__img {
-    background-image: url(../assets/imagenes/escritorio.jpg);
+    background-image: url(../assets/imagenes/escritorio1.jpg);
     margin: 2rem;
     height: 30vh;
     background-size: cover;
@@ -394,12 +454,20 @@
     background-attachment: fixed;
     object-fit: cover;
     text-align: center; }
-    .section_contacto .section__img h2 {
-      padding-top: 5rem;
-      font-size: 1rem;
-      margin-top: 0.5rem; }
-    .section_contacto .section__img h3 {
-      font-size: 1rem; }
+    .section_contacto .section__img div {
+      height: 100%;
+      background-color: #0000001a;
+      color: #000000ae;
+      transition: 0.8s; }
+      .section_contacto .section__img div:hover {
+        background-color: #ffffff0e;
+        color: #000000e8; }
+      .section_contacto .section__img div h2 {
+        padding-top: 5rem;
+        font-size: 1.5rem;
+        margin-top: 0.5rem; }
+      .section_contacto .section__img div h3 {
+        font-size: 1.3rem; }
 
 .section__form {
   display: flex;
@@ -426,7 +494,15 @@
 
 .detalle_abog {
   margin-top: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  transition: 0.8s; }
+  .detalle_abog:hover {
+    background-color: #ffffff65; }
+  .detalle_abog:hover p {
+    color: #000000; }
+  .detalle_abog p {
+    color: #00000082;
+    font-size: 1.5rem; }
   .detalle_abog .img_abogados {
     overflow: hidden;
     transition: 0.8s; }
@@ -436,7 +512,12 @@
 
 /* SERVICIOS */
 .detalle_servicios {
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  transition: 0.8s; }
+  .detalle_servicios:hover {
+    background-color: rgba(255, 255, 255, 0.376); }
+  .detalle_servicios p {
+    color: #000000; }
   .detalle_servicios .img_servicios {
     overflow: hidden;
     transition: 0.8s; }
@@ -444,15 +525,30 @@
       transform: translate(-0.2rem, -0.1rem);
       background-color: rgba(11, 12, 12, 0.176); }
 
-.lincks_servicios {
-  margin-bottom: 2rem;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.678) !important; }
-
 .carousel__bannerServicios {
-  height: 50vh; }
+  height: 60vh;
+  text-align: center; }
   .carousel__bannerServicios .carousel__bannerServicios--in {
     background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/imagenbanner.jpg); }
+  .carousel__bannerServicios div {
+    margin-bottom: 10%;
+    transition: 0.8s;
+    padding: 4rem; }
+    .carousel__bannerServicios div:hover {
+      background-color: #00000082;
+      border: #ffffff7e;
+      border-style: double; }
+    .carousel__bannerServicios div h1 {
+      font-family: "Roboto";
+      font-size: 3rem; }
+    .carousel__bannerServicios div a {
+      text-decoration: none;
+      text-align: center;
+      font-family: "Roboto";
+      color: #f4f4f4;
+      border: double #ffffff; }
+      .carousel__bannerServicios div a h2 {
+        font-size: 3rem; }
   .carousel__bannerServicios .carousel__bannerServicios--info {
     background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/servicios_contacto.jpg); }
   .carousel__bannerServicios .carousel__bannerServicios--nosotras {
@@ -483,11 +579,11 @@
     font-size: 2rem; }
     .bannerNov__conten .bannerNov__conten__text h1 {
       margin-bottom: 5rem;
-      font-size: 5rem; }
+      font-size: 5rem;
+      font-family: "Roboto"; }
     .bannerNov__conten .bannerNov__conten__text p {
       margin: 2rem;
-      font-size: 1.3rem;
-      font-family: "Roboto"; }
+      font-size: 1.3rem; }
     .bannerNov__conten .bannerNov__conten__text a {
       bottom: 7rem;
       right: -1rem;
@@ -500,7 +596,8 @@
       .bannerNov__conten .bannerNov__conten__text a:hover {
         transform: translate(0.2rem, 0.1rem);
         color: #b7950ba8;
-        background-color: rgba(240, 248, 255, 0.687); }
+        background-color: rgba(240, 248, 255, 0.687);
+        border-style: double; }
 
 .sectionNoticias {
   position: relative;
@@ -576,32 +673,10 @@
         border-bottom: rgba(0, 0, 0, 0.489) 0.5rem solid; }
       .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--titulo h3 {
         font-size: 0.8rem;
+        padding-left: 1rem;
         background-color: rgba(0, 0, 0, 0.303); }
         .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--titulo h3 .sectionNoticias__noticia--titulo-autor {
           font-size: 1rem; }
-
-.seccionContacto__info {
-  background-color: rgba(59, 59, 59, 0.589);
-  overflow: hidden;
-  padding: 2rem;
-  color: aliceblue;
-  margin: 1rem;
-  width: 65%; }
-  .seccionContacto__info h2 {
-    margin: 0.5rem;
-    font-size: 1.4em; }
-  .seccionContacto__info p {
-    font-size: 0.7em; }
-
-.seccionContacto__contacto {
-  width: 35%;
-  background-color: #ae9b6098;
-  text-align: center;
-  padding: 0.5rem;
-  margin: 1rem; }
-  .seccionContacto__contacto p {
-    font-size: 0.8rem;
-    padding: 0.5rem; }
 
 @media (max-width: 500px) {
   .footer {
@@ -611,6 +686,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .footer h6 {
+      font-family: "Roboto"; }
     .footer .logoFooter {
       width: 2rem;
       margin: 1rem; }
@@ -627,28 +704,32 @@
     .footer .footer__contacto {
       position: relative;
       left: 1rem;
-      width: 50vh;
+      width: 40%;
       padding-top: 1rem; }
-    .footer .footer__section .footer__section__firma {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding-top: 1.5rem;
-      justify-content: space-between; }
-      .footer .footer__section .footer__section__firma .logoFooter {
-        height: auto;
-        width: 1.5rem;
-        margin: 1rem; }
-      .footer .footer__section .footer__section__firma .footer__lincks {
-        margin-left: 15rem;
-        padding: 0.5rem; }
-        .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--facebook {
+    .footer .footer__section {
+      width: 60%; }
+      .footer .footer__section .footer__section__firma {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1.5rem; }
+        .footer .footer__section .footer__section__firma .logoFooter {
+          height: auto;
+          width: 2.5rem;
+          margin: 1rem; }
+        .footer .footer__section .footer__section__firma h6 {
+          font-size: 1.5rem;
+          font-family: "Roboto"; }
+        .footer .footer__section .footer__section__firma .footer__lincks {
           padding: 0.5rem;
-          color: aliceblue; }
-          .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--facebook:hover {
-            color: #e6b325b9; }
-        .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--instagram {
-          padding: 0.5rem;
-          color: #f2f3de; }
-          .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--instagram:hover {
-            color: #e6b325b9; } }
+          margin-left: 15rem; }
+          .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--facebook {
+            padding: 0.5rem;
+            color: aliceblue; }
+            .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--facebook:hover {
+              color: #e6b325b9; }
+          .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--instagram {
+            padding: 0.5rem;
+            color: #f2f3de; }
+            .footer .footer__section .footer__section__firma .footer__lincks .footer__lincks--instagram:hover {
+              color: #e6b325b9; } }

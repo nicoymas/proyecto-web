@@ -6,6 +6,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        h6{
+            font-family: map-get($fuentes, titulos );
+        }
         .logoFooter{
             width: 2rem;
             margin: 1rem;
@@ -30,33 +33,34 @@
         .footer__contacto{
             position: relative;
             left:1rem;
-            width: 50vh;
+            width: 40%;
             padding-top: 1rem;
         }
         .footer__section{
+            width: 60%;
             .footer__section__firma{
                 display: flex;
                 flex-direction: row;
                 align-items: $center;
                 padding-top: 1.5rem;
-                justify-content: space-between;
                 .logoFooter{
-                   
-                    
                     height: auto;
-                    width: 1.5rem;
+                    width: 2.5rem;
                     margin: 1rem;
                 }
+                h6{
+                    font-size: 1.5rem;
+                    font-family: map-get($fuentes , titulos );
+                }
                 .footer__lincks{
-                    margin-left:15rem;
                     padding: 0.5rem;
+                    margin-left: 15rem;
                     .footer__lincks--facebook{
                         padding: 0.5rem;
                         color: aliceblue;
                         &:hover{
                             color: #e6b325b9;
                         }
-                    
                     }
                     .footer__lincks--instagram{
                         padding: 0.5rem;

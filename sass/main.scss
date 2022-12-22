@@ -1,4 +1,4 @@
-
+@import"variables";
 
 @media  (max-width:500px){
 
@@ -57,7 +57,8 @@
     /* SERVICIOS */
 
     .carousel__bannerServicios{
-        height:50vh;
+        height:60vh;
+        
         .carousel__bannerServicios--in{
             background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/rsz_imagen_banner.jpg);
         }
@@ -113,6 +114,7 @@
             }
             h2{
                 font-family: map-get($fuentes ,titulos );
+                font-size: 3rem;
             }
             h4{
                 font-family: map-get($fuentes,font-general);
@@ -179,12 +181,23 @@
         @include display_direction_conten;
         align-items: $center;
         width: 30%;
+        transition: 0.5s;
+        &:hover{
+            background-color: #ffffff;
+        }
         
         p{
-            font-size: 0.7rem;
-            margin: 0.5rem;
-            color: #000000b2;
+            font-size: 1rem;
+            margin: 0.8rem;
+            text-align: center;
+            color: #000000ce;
             font-family:map-get($fuentes,font-text);
+            transition: 0.8s;
+            &:hover{
+            font-size: 1.1rem;
+            color: #000000;
+            
+            }
         }
         .bannerSecundario__sub__btn {
             background-color: #505050c9;
@@ -193,8 +206,7 @@
             color: #ffffffb9;
             cursor: pointer;
             display: inline-block;
-            font-size: 0.5em;
-            font-size: 0.5rem;
+            font-size: 1rem;
             font-family:map-get($fuentes, font-general) ;
             line-height:0.1em;
             margin: $rem 4rem;
@@ -269,14 +281,22 @@
     @include background-imagenes;
     width: 100%;
     height: 50vh;
+    
     .bannerInicio__conten{
         color:aliceblue;
         padding-top: $rem+2;
-        position:absolute;
-        left: 20%;
+        text-align: center;
+        transition: 1s;
+        width: 80%;
+        height: 90%;
+        &:hover{
+        background-color: #0000006e;
+
+        }
         h1{
-            font-size: 2.4rem;
-            font-family:map-get($fuentes ,titulos );
+            font-size: 4rem;
+            font-family:map-get($fuentes,titulos);
+            
         }
         h2{
             font-family:map-get($fuentes,font-text);
@@ -290,13 +310,14 @@
         }
         .bannerInicio__contact{
             text-decoration: none;
-            color: rgb(0, 0, 0);
-            background-color: rgba(119, 119, 119, 0.281);
+            color: rgb(255, 251, 251);
+            background-color: rgba(119, 119, 119, 0.483);
             border-radius: 0.5rem;
+            width: 9rem;
             padding: 0.5rem;
             position: fixed;
             bottom: 6rem;
-            right: 0rem;
+            right: -2rem;
             z-index: 10;
             transform: rotate(270deg);
             transition: 1s;
@@ -307,12 +328,53 @@
     }
     
 }
+.seccionContacto__info{
+    background-color: rgba(59, 59, 59, 0.589);
+    overflow: hidden;
+    padding: 2rem;
+    color:aliceblue;
+    margin: $rem;
+    width: 65%;
+    h2{
+        margin:0.5rem;
+        font-size: 1.9rem;
+        font-family: map-get($fuentes ,titulos );
+    }
+    p{
+        font-family: map-get($fuentes , font-general );
+        font-size: 1rem;
+    }
+}
+
+.seccionContacto__contacto{
+    width: 35%;
+    background-color: #ae9a6047;
+    text-align: $center;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    margin: $rem;
+    @include display_direction_conten;
+    a{
+        text-decoration: none;
+        color: #000000c0;
+        font-size: 1.3rem;
+        font-family:map-get($fuentes,font-text);
+        transition:  0.5s;
+            &:hover{
+                transform: translate(-0.1rem, -0.1rem);
+                background-color: #ae9a607b;
+                color:#000000;
+            }
+    }
+}
 .sectionAreas{
     .sectionAreas__titulo{
-        background-color: #e7e6e133;
+        background-color: #e7e6e154;
         text-align: $center;
         margin: $rem;
-        font-family: map-get($fuentes,font-text);
+        margin-top: 5rem;
+        font-family: map-get($fuentes,titulos);
+        font-size: 2.6rem;
     }
     .sectionAreas__cards{
         margin: $rem;
@@ -322,8 +384,8 @@
         flex-wrap: wrap;
         .sectionAreas__card{
             text-decoration: none;
-            color: #000000a9;
-            background-color: #ffffff0e;
+            color: #000000c6;
+            background-color: #ffffff21;
             font-size: $rem;
             text-align: $center;
             height: 80%;
@@ -332,17 +394,21 @@
             overflow: hidden;
             transition:  0.8s;
             &:hover{
+                background-color: #00000015;
                 transform: translate(-0.2rem, -0.1rem);
                 color:#b7950ba8;
             }
             h4{
                 padding: 0.5rem;
+                font-family: map-get($fuentes,titulos);
+                font-size: 1.5rem;
             }
             p{
-                font-size: 0.7rem;
+                font-size: 1rem;
             }
             .icon-previcional{
-                color: #0000009c;
+                color: #000000aa;
+                
             }
             .icon-laboral{
                 color: #0000009c;
@@ -373,22 +439,35 @@
         color: #ffffffb4;
         text-align: $center;
         background-color: #00000031;
+        font-family: map-get($fuentes, titulos );
     }
     .section__img{
-        background-image: url(../assets/imagenes/escritorio.jpg);
+        background-image: url(../assets/imagenes/escritorio1.jpg);
         margin: 2rem;
         height: 30vh;
         @include background-imagenes;
         text-align: $center;
-        h2{
-            padding-top: 5rem;
-            font-size: $rem;
-            margin-top: 0.5rem;
-        }
-        h3{
-            font-size: 1rem;
-        }
         
+        div{
+            height: 100%;
+            background-color: #0000001a;
+            color: #000000ae;
+            transition: 0.8s;
+            &:hover{
+                background-color:#ffffff0e;
+                color: #000000e8;
+            }
+            h2{
+                padding-top: 5rem;
+                font-size: $rem+0.5;
+                margin-top: 0.5rem;
+            }
+            h3{
+                font-size: 1.3rem;
+            }
+
+        }
+
     }
     
 }
@@ -431,6 +510,18 @@
 .detalle_abog{
     margin-top: 3rem;
     margin-bottom: 2rem;
+    transition: 0.8s;
+    &:hover{
+        background-color: #ffffff65;
+    }
+    &:hover p{
+        color: #000000;
+    }
+    p{
+        color: #00000082;
+        font-size: 1.5rem;
+        
+    }
     .img_abogados{
         overflow: hidden;
         transition:  0.8s;
@@ -448,6 +539,14 @@
 
 .detalle_servicios{
     margin-top: 10rem;
+    transition: 0.8s;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.376);
+    }
+    p{
+        color: #000000;
+        font-family: map-get($fuentes , font-general);
+    }
     .img_servicios{
         overflow: hidden;
         transition:  0.8s;
@@ -458,18 +557,38 @@
     }
 }
 
-.lincks_servicios{
-    margin-bottom: 2rem;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.678) !important;
-    
-}
+
 
 
 .carousel__bannerServicios{
-    height:50vh;
+    height:60vh;
+    text-align: center;
     .carousel__bannerServicios--in{
         background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/imagenbanner.jpg);
+    }
+    div{
+        margin-bottom: 10%;
+        transition: 0.8s;
+        padding: 4rem;
+        &:hover{
+            background-color: #00000082;
+            border: #ffffff7e;
+            border-style: double;
+        }
+        h1{
+            font-family: map-get($fuentes , titulos );
+            font-size: 3rem;
+        }
+        a{
+            text-decoration: none;
+            text-align: center;
+            font-family: map-get($fuentes , titulos );
+            color: rgb(244, 244, 244);
+            border:double #ffffff;
+            h2{
+                font-size: 3rem;
+            }
+        }
     }
     .carousel__bannerServicios--info{
         background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/servicios_contacto.jpg);
@@ -491,12 +610,7 @@
 .sectionNoticia__noticia img{
     display: none;
 }
-// .bannerNov{
-//     background-image: linear-gradient(to top, #ffffffd6, #b9b9b9bf, #7777777e, #3b3b3b7e, #00000097), url(../assets/imagenes/novedadesWeb.jpg);
-//     @include background-imagenes;
-//     height: 90vh;
-//     @include display_direction_conten(row )
-// }
+
 
 
 .bannerNov__conten{
@@ -537,6 +651,7 @@
                 transform: translate(0.2rem, 0.1rem);
                 color: #b7950ba8;
                 background-color: rgba(240, 248, 255, 0.687);
+                border-style: double;
             }
         }
     }
@@ -609,6 +724,7 @@
             }
             h3{
                 font-size: 0.8rem;
+                padding-left: 1rem;
                 background-color: rgba(0, 0, 0, 0.303);
                 .sectionNoticias__noticia--titulo-autor{
                     font-size: 1rem;
@@ -622,35 +738,3 @@
 }
 
 
-// INDEX BS
-
-.seccionContacto__info{
-    background-color: rgba(59, 59, 59, 0.589);
-    overflow: hidden;
-    padding: 2rem;
-    color:aliceblue;
-    margin: $rem;
-    width: 65%;
-    h2{
-        margin:0.5rem;
-        font-size: 1.4em;
-        font-family: map-get($fuentes ,titulos );
-    }
-    p{
-        font-family: map-get($fuentes , font-general );
-        font-size: 0.7em;
-    }
-}
-
-.seccionContacto__contacto{
-    width: 35%;
-    background-color: #ae9b6098;
-    text-align: $center;
-    padding: 0.5rem;
-    margin: $rem;
-    p{
-        font-size: 0.8rem;
-        padding: 0.5rem;
-        font-family:map-get($fuentes,font-text);
-    }
-}

@@ -1,7 +1,5 @@
 @import"variables";
 @media  (max-width:505px){ 
-    
-   
     // INDEX
     .header{
         height: 4rem;
@@ -16,11 +14,7 @@
             } 
         }
         .navresp{
-            // position: absolute;
-            // height: 3rem;
             background-color: #090808;
-            // z-index: 10;
-           
             .contentLinks{
                 display: none;
             }
@@ -29,7 +23,6 @@
     }
 }
 @media (min-width:506px){
-    // INDEX
     .header{
         background-color:#fafafa7c;
         position: sticky;
@@ -54,10 +47,8 @@
                 justify-content: $center;
                 align-self: auto;
                 margin-bottom:0.5rem ;
-                
                 position: relative;
                 bottom: 0rem;
-                // background-color: #ffffff77;
                 font-size: 1.3rem;
                 .navbar__linck{
                     text-decoration: none;
@@ -81,8 +72,7 @@
                         transform:scaleX(0);
                         transform-origin: left;
                         transition: transform .35s ease;
-                    }
-                           
+                    }          
                 }
                 :root {
                     --animate-delay: 0.2s;
