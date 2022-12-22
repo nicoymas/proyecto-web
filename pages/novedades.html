@@ -18,16 +18,16 @@
 </head>
 <body class="body">
     <header class="header">
-        <nav class="navbar">
-            <a href="../index.html">
+        <nav class="navbar ">
+            <a href="../index.html" title="inicio">
                 <img class=" logo" width="40" height="32" src="../assets/imagenes/logo.png" alt="logo" title="ClientoDaiz"></img>
             </a>
-            <div class="contentLinks ">
-                <a class="navbar__linck"  href="../index.html">inicio</a>
-                <a class="navbar__linck"  href="./servicios.html">servicios</a>
-                <a class="navbar__linck"  href="./novedades.html">novedades</a>
-                <a class="navbar__linck"  href="./nosotras.html">nosotras</a>
-                <a class="navbar__linck"  href="./contacto.html">contacto</a>
+            <div class="contentLinks">
+                <a class="navbar__linck" title="inicio" href="../index.html">inicio</a>
+                <a class="navbar__linck" title="servicios" href="./servicios.html">servicios</a>
+                <a class="navbar__linck" title="novedades" href="./novedades.html">novedades</a>
+                <a class="navbar__linck" title="nosotras" href="./nosotras.html">nosotras</a>
+                <a class="navbar__linck" title="contacto" href="./contacto.html">contacto</a>
             </div>
             <div class="navResp">
                 <div class="nav-item dropdown">
@@ -35,11 +35,11 @@
                       Informacion
                     </a>
                     <ul class="dropdown-menu">
-                        <a class="dropdown-item" href="../index.html">Inicio</a>
-                      <a class="dropdown-item" href="./servicios.html">Servicios</a>
-                      <a class="dropdown-item" href="./novedades.html">Novedades</a>
-                      <a class="dropdown-item" href="./nosotras.html">Nosotras</a>
-                      <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                      <a class="dropdown-item" title="inicio" href="../index.html">Inicio</a>
+                      <a class="dropdown-item" title="servicios" href="./servicios.html">Servicios</a>
+                      <a class="dropdown-item" title="novedades" href="./novedades.html">Novedades</a>
+                      <a class="dropdown-item" title="nosotras" href="./nosotras.html">Nosotras</a>
+                      <a class="dropdown-item" title="contacto" href="./contacto.html">Contacto</a>
                     </ul>
                 </div>
             </div>    
@@ -50,60 +50,97 @@
         <section class="bannerNov">
             <div class="bannerNov__conten">
                 <div class="bannerNov__conten__text">
-                    <h1>novedades</h1>
-                    <p>Elaboramos periódicamente informes para clientes y boletines donde se analizan cambios en 
+                    <h1 id="novedades">Novedades</h1>
+                    <p>Elaboramos periódicamente informes para clientes y boletines donde se analizan 
+                        <br>
+                        cambios en 
                         la legislación y su impacto en nuestros clientes.
                     </p>
-                    <a href="./contacto.html" class="bannerInicio__contact sub">subscribete</a>
+                    <a href="./contacto.html" >Subscribete</a>
                 </div>    
             </div>
-            <img src="../assets/imagenes/novedades.jpg" alt="novedades" loading="lazy" class="bannerNov__conten__img">
         </section>
-        <div class="sectionBusqueda">
-            <div class="sectionBusqueda__text">
-                
-                <p>lo desconocido es el lugar donde se produce el crecimiento</p>
-            </div>
-            <div class="sectionBusqueda__input">
-                <input type="text"placeholder="busca info aqui" name="buscar"class="sectionBusqueda__input--busqueda">
-                <input type="submit" value="buscar" class="sectionBusqueda__input--btnBusqueda">
-            </div>
-        </div>
         <section class="sectionNoticias">
             <div class="sectionNoticia__noticia">
-                <img src="" loading="lazy" alt="mascotas">
-                <h2 class="sectionNoticias__titulo1">¿con quien se queda el perro?</h2>
-                <p>a custodia de los animales de compañía tras la separación de una familia o 
-                    pareja es una problemática cada vez más frecuente en nuestra sociedad y 
-                    aunque generalmente las partes logran llegar a un acuerdo, en muchas otras 
-                    ocasiones este tipo de conflictos suele terminar en procesos judiciales.</p>
+                <div class="sectionNoticias__noticia--titulo">
+                    <h2>¿con quien se queda el perro?</h2>
+                    <h3>Creado por <p class="sectionNoticias__noticia--titulo-autor">Rocio Juliana Daiz. </p> 11/06/2013 - 07:35 </h3>
+                </div>
+                <div class="sectionNoticias__noticia--contenido">
+                    <div class="sectionNoticias__noticia--contenido-img1"></div>
+                    <p> a custodia de los animales de compañía tras la separación de una familia o 
+                        pareja es una problemática cada vez más frecuente en nuestra sociedad y 
+                        aunque generalmente las partes logran llegar a un acuerdo, en muchas otras 
+                        ocasiones este tipo de conflictos suele terminar en procesos judiciales.
+                    </p>
+                </div>
+                <button class="linckInteres" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Lincks de interes
+                </button>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <a href="https://elderecho.com/custodia-mascotas-en-divorcio-separacion" title="linckexterno" target="_blank">Custodia de mascotas</a>
+                  </div>
+                </div>    
             </div>
             <div class="sectionNoticia__noticia">
-                <img src="../assets/imagenes/previsionalNoticiaMovile.webp" loading="lazy" alt="previsional">
-                <h2 class="sectionNoticias__titulo2">media sancion de la nueva moratoria previcional</h2>
-                <p>Suele suceder que nuestros clientes se acercan al estudio sin contar con la
-                    cantidad de años de aportes o edad suficiente para acceder a su jubilación 
-                    o aplicar a las moratorias vigentes. Es por ello que queríamos acercarles
-                    esta información importante sobre una nueva ley que aún no fue sancionada
-                    por ambas cámaras pero que podría contribuir a que miles de personas en
-                    edad de jubilarse accedan a dicho beneficio.</p>
+                <div class="sectionNoticias__noticia--titulo">
+                    <h2>media sancion de la nueva moratoria previcional</h2>
+                    <h3>Creado por <p class="sectionNoticias__noticia--titulo-autor">Rocio Juliana Daiz. </p> 11/06/2013 - 07:35 </h3>
+                </div>
+                
+                <div class="sectionNoticias__noticia--contenido">
+                    <div class="sectionNoticias__noticia--contenido-img2"></div>
+                    <p>Suele suceder que nuestros clientes se acercan al estudio sin contar con la
+                        cantidad de años de aportes o edad suficiente para acceder a su jubilación 
+                        o aplicar a las moratorias vigentes. Es por ello que queríamos acercarles
+                        esta información importante sobre una nueva ley que aún no fue sancionada
+                        por ambas cámaras pero que podría contribuir a que miles de personas en
+                        edad de jubilarse accedan a dicho beneficio.
+                    </p>
+                </div>
+                <button class="linckInteres" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Lincks de interes
+                </button>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <a href="https://www.argentina.gob.ar/servicio/adherir-moratorias-previsionales" title="linckexterno" target="_blank">anses-moratorias</a>
+                  </div>
+                </div>        
             </div>
             <div class="sectionNoticia__noticia">
-                <img src="../assets/imagenes/indemnizacionNoticiaMovile.jpg" loading="lazy" alt="indemnizacion">
-                <h2 class="sectionNoticias__titulo3">fin de la doble indemnizacion</h2>
-                <p>Este primero de Julio de 2022 llegó a su fin el decreto que imponía una doble
-                    indemnización ante casos de despido sin justa causa.
-                    Dicha medida fue dispuesta mediante el DNU 34/2019 en diciembre de 2019. O
-                    riginalmente se estableció un plazo de vigencia de 180 días, que fue 
-                    prorrogado de manera reiterada.
-                    🔸 No queríamos dejar de comentarles el fin de esta medida debido a 
-                    que ya no se podrá tener en cuenta su aplicación al momento de realizar
-                     la liquidación correspondiente en una demanda por despido injustificado.
-                    👉🏼 Sin embargo, y tal como siempre les recomendamos cuando se acercan a 
-                    nosotras, no dejen de asesorarse y consultar para poder proteger todos sus 
-                    derechos de manera acabada con profesionales.</p>
+                <div class="sectionNoticias__noticia--titulo">
+                    <h2>fin de la doble indemnizacion</h2>
+                    <h3>Creado por <p class="sectionNoticias__noticia--titulo-autor">Rocio Juliana Daiz. </p> 11/06/2013 - 07:35 </h3>
+                </div>
+                <!-- <img src="../assets/imagenes/indemnizacionNoticiaMovile.jpg" loading="lazy" alt="indemnizacion"> -->
+                <div class="sectionNoticias__noticia--contenido">
+                    <div class="sectionNoticias__noticia--contenido-img3"></div>
+                    <p>Este primero de Julio de 2022 llegó a su fin el decreto que imponía una doble
+                        indemnización ante casos de despido sin justa causa.
+                        Dicha medida fue dispuesta mediante el DNU 34/2019 en diciembre de 2019. O
+                        riginalmente se estableció un plazo de vigencia de 180 días, que fue 
+                        prorrogado de manera reiterada.
+                        🔸 No queríamos dejar de comentarles el fin de esta medida debido a 
+                        que ya no se podrá tener en cuenta su aplicación al momento de realizar
+                         la liquidación correspondiente en una demanda por despido injustificado.
+                        👉🏼 Sin embargo, y tal como siempre les recomendamos cuando se acercan a 
+                        nosotras, no dejen de asesorarse y consultar para poder proteger todos sus 
+                        derechos de manera acabada con profesionales.
+                    </p>
+                </div>
+                <button class="linckInteres" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Lincks de interes
+                </button>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/despido" title="linckexterno" target="_blank">Despidos</a>
+                  </div>
+                </div>    
             </div>
+            <a href="#novedades" title="linckinterno#" class="container novedades_linck"> Volver</a>
         </section>
+        
     </main>
     <footer class="footer container-fluid">
         <div class="footer__contacto">
@@ -116,17 +153,14 @@
             <div class="footer__section__firma">
                 <img class="logoFooter" src="../assets/imagenes/logo.png" alt="logo" title="ClientoDaiz">
                 <h6>ClientoDaiz & Asociados</h6>
-                
-
                 <div class="footer__lincks">
-                    <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1662524771&extra_1=s%7Cc%7C514612296931%7Ce%7Cfacebook%7C&placement=&creative=514612296931&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1662524771%26adgroupid%3D67039035794%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1000037%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D" target="_blank">
-                        <i class="fa-brands fa-square-facebook footer__lincks--facebook"></i>
+                    <a href="https://www.facebook.com" title="facebook" target="_blank">
+                      <i class="fa-brands fa-square-facebook footer__lincks--facebook"></i>
                     </a>
-               
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                        <i class="fa-brands fa-instagram footer__lincks--instagram"></i>
-                    </a>
-                   
+                
+                    <a href="https://www.instagram.com/?hl=es-la" title="instagram" target="_blank">
+                      <i class="fa-brands fa-instagram footer__lincks--instagram"></i>
+                    </a> 
                 </div>
             </div>
         </div>    

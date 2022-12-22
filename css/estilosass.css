@@ -38,115 +38,68 @@
     background-attachment: fixed;
     object-fit: cover; } }
 
-@media (max-width: 500px) {
+@media (max-width: 505px) {
   .header {
     height: 4rem;
-    background-color: #fdfdfd8d; }
+    background-color: #fdfdfd31; }
+    .header .navbar .logo {
+      height: 3.5rem;
+      width: 3.5rem; }
     .header .navbar .contentLinks {
       display: none; }
     .header .navresp {
-      position: absolute;
-      height: 3rem;
-      background-color: #fdfdfd;
-      z-index: 10; }
+      background-color: #090808; }
       .header .navresp .contentLinks {
         display: none; } }
 
-@media (min-width: 501px) {
+@media (min-width: 506px) {
   .header {
     background-color: #fafafa7c;
     position: sticky;
     top: 0px;
     z-index: 10;
-    height: 2.5rem; }
-    .header .logo {
-      position: relative;
-      bottom: 0.5rem;
-      height: 2.5rem; }
-    .header .contentLinks {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-bottom: 0.5rem;
-      position: relative;
-      bottom: 0rem;
-      background-color: #ffffff77; }
-    .header .navResp {
-      display: none; }
-  .navbar {
-    height: 3rem; }
-  .navbar__linck {
-    text-decoration: none;
-    color: black !important;
-    margin-left: 1em;
-    position: relative; }
-    .navbar__linck:hover:after {
-      transform: scaleX(1); }
-    .navbar__linck:after {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: black;
-      border-radius: 4px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .35s ease; }
-  :root {
-    --animate-delay: 0.2s; } }
+    height: 4rem; }
+    .header .navbar {
+      height: 3rem; }
+      .header .navbar .navResp {
+        display: none; }
+      .header .navbar .logo {
+        position: relative;
+        bottom: 0.5rem;
+        height: 4rem;
+        width: 4rem; }
+      .header .navbar .contentLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: auto;
+        margin-bottom: 0.5rem;
+        position: relative;
+        bottom: 0rem;
+        font-size: 1.3rem; }
+        .header .navbar .contentLinks .navbar__linck {
+          text-decoration: none;
+          color: black !important;
+          margin-left: 1em;
+          position: relative; }
+          .header .navbar .contentLinks .navbar__linck:hover:after {
+            transform: scaleX(1); }
+          .header .navbar .contentLinks .navbar__linck:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .35s ease; }
+        .header .navbar .contentLinks :root {
+          --animate-delay: 0.2s; } }
 
 @media (max-width: 500px) {
-  .bannerInicio {
-    background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/rsz_imagen_banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
-    color: rgba(231, 231, 231, 0.736);
-    width: 100%;
-    text-align: center; }
-    .bannerInicio h1 {
-      font-size: 4rem; }
-    .bannerInicio h4 {
-      font-size: 2rem;
-      margin-bottom: 1rem; }
-    .bannerInicio h6 {
-      font-size: 1rem; }
-    .bannerInicio a {
-      display: none; }
-  .seccionContacto .seccionContacto__info {
-    margin-bottom: 1rem;
-    color: #0000009f; }
-    .seccionContacto .seccionContacto__info h2 {
-      margin: 1rem;
-      font-size: 1.6rem; }
-    .seccionContacto .seccionContacto__info p {
-      font-size: 1.1rem; }
-  .sectionAreas {
-    text-align: center; }
-    .sectionAreas .sectionAreas__titulo {
-      font-size: 1.7rem; }
-    .sectionAreas .sectionAreas__cards {
-      padding: 1.5rem;
-      background-color: rgba(245, 245, 220, 0.393);
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-style: inset;
-      box-shadow: 60px -16px rgba(32, 33, 33, 0.138); }
-      .sectionAreas .sectionAreas__cards a {
-        color: rgba(0, 0, 0, 0.793);
-        text-decoration: none;
-        margin: 0.7rem;
-        background-color: rgba(88, 88, 88, 0.26);
-        padding: 0.5rem; }
-        .sectionAreas .sectionAreas__cards a div .sectionAreas__cards__titulo {
-          margin: 0.5em;
-          font-size: 1.1em; }
   .bannerSecundario {
     background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__image.jpg);
     text-align: center;
@@ -200,110 +153,20 @@
       object-fit: cover; }
   .carousel {
     margin-top: 1rem; }
-  .lincks_servicios--resp {
-    display: none !important; }
   /* --------------------------------------- */
-  /* CONTACTO */
-  .section {
-    height: 40%; }
-    .section .section__form {
-      background-color: rgba(34, 34, 35, 0.26);
-      padding: 1rem;
-      margin-top: 5rem; }
-      .section .section__form input {
-        height: 2.5rem; }
-      .section .section__form textarea {
-        height: 50%; }
-    .section .section__img {
-      background-image: url(../assets/imagenes/escritorio.webp);
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      object-fit: cover;
-      font-size: 2.5rem;
-      padding-top: 6rem;
-      text-align: center;
-      color: aliceblue; }
-      .section .section__img h6 {
-        padding: 0.5rem; } }
-
-@media (min-width: 501px) {
-  .bannerInicio {
-    background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/imagenbanner.jpg");
+  .bannerNov {
+    background-image: linear-gradient(to top, #ffffffd6, #b9b9b9bf, #7777777e, #3b3b3b7e, #00000097), url(../assets/imagenes/novedades.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
-    width: 100%;
-    height: 50vh; }
-    .bannerInicio .bannerInicio__conten {
-      color: aliceblue;
-      padding-top: 3rem;
-      position: absolute;
-      left: 20%; }
-      .bannerInicio .bannerInicio__conten h1 {
-        font-size: 2.4rem; }
-      .bannerInicio .bannerInicio__conten h6 {
-        font-size: large; }
-      .bannerInicio .bannerInicio__conten h4 {
-        padding: 1rem; }
-      .bannerInicio .bannerInicio__conten .bannerInicio__contact {
-        text-decoration: none;
-        color: black;
-        background-color: rgba(119, 119, 119, 0.281);
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        position: fixed;
-        bottom: 6rem;
-        right: 0rem;
-        z-index: 10;
-        transform: rotate(270deg);
-        transition: 1s; }
-        .bannerInicio .bannerInicio__conten .bannerInicio__contact:hover {
-          background-color: #e6b325b9; }
-  .sectionAreas .sectionAreas__titulo {
-    background-color: #e7e6e133;
-    text-align: center;
-    margin: 1rem; }
-  .sectionAreas .sectionAreas__cards {
-    margin: 1rem;
-    margin-left: 2.5rem;
-    width: 90%;
-    height: 35vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap; }
-    .sectionAreas .sectionAreas__cards .sectionAreas__card {
-      text-decoration: none;
-      color: #000000a9;
-      background-color: #ffffff0e;
-      font-size: 1rem;
-      text-align: center;
-      height: 80%;
-      margin: 0.5rem;
-      padding: 0.5rem;
-      overflow: hidden;
-      transition: 0.8s; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card:hover {
-        transform: translate(-0.2rem, -0.1rem);
-        color: #b7950ba8; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card h4 {
-        padding: 0.5rem; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card p {
-        font-size: 0.7rem; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-previcional {
-        color: #0000009c; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-laboral {
-        color: #0000009c; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-familiar {
-        color: #0000009c; }
-      .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-ver {
-        color: #0000009c; }
+    justify-content: center; } }
+
+@media (min-width: 501px) {
   .bannerSecundario {
     background-color: #e7e7e748;
     margin-bottom: 1rem;
@@ -311,6 +174,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
     height: 55vh; }
     .bannerSecundario .bannerSecundario__conten {
       background-image: linear-gradient(to right top, #b3b3b3bd, #bdbdbdd3, #77777765, #91919163, #f2f3de), url(../assets/imagenes/bannerSecundario__imageWeb.jpg);
@@ -424,45 +288,132 @@
   .bannerSecundario__sub__btn.hover:after {
     height: 100%;
     width: 100%; }
-  /* CONTACTO */
-  .section_contacto {
-    background-color: #f0a4001c;
-    padding: 2rem; }
-    .section_contacto .titulo_contacto {
-      padding: 1rem;
-      color: #ffffffb4;
-      text-align: center;
-      background-color: #d5a128a0; }
-    .section_contacto .section__img {
-      background-image: linear-gradient(to right top, #28282895, #00000091, #f0a40034, #4f4e4ec2, #5f5f5f), url(../assets/imagenes/escritorio.webp);
-      margin: 2rem;
-      height: 30vh;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      object-fit: cover;
-      text-align: center; }
-    .section_contacto h6 {
-      padding: 0.2rem;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      color: aliceblue; }
-  .section__form {
+  .bannerNov {
+    background-image: linear-gradient(to top, #ffffffd6, #b9b9b9bf, #7777777e, #3b3b3b7e, #00000097), url(../assets/imagenes/novedadesWeb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    height: 90vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center; } }
+
+.bannerInicio {
+  background-image: linear-gradient(to right bottom, #fffdfd7a, #b9b7b752, #77767641, #3b3b3b2d, #000000), url("../assets/imagenes/imagenbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 50vh; }
+  .bannerInicio .bannerInicio__conten {
+    color: aliceblue;
+    padding-top: 3rem;
+    position: absolute;
+    left: 20%; }
+    .bannerInicio .bannerInicio__conten h1 {
+      font-size: 2.4rem; }
+    .bannerInicio .bannerInicio__conten h6 {
+      font-size: large; }
+    .bannerInicio .bannerInicio__conten h4 {
+      padding: 1rem; }
+    .bannerInicio .bannerInicio__conten .bannerInicio__contact {
+      text-decoration: none;
+      color: black;
+      background-color: rgba(119, 119, 119, 0.281);
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      position: fixed;
+      bottom: 6rem;
+      right: 0rem;
+      z-index: 10;
+      transform: rotate(270deg);
+      transition: 1s; }
+      .bannerInicio .bannerInicio__conten .bannerInicio__contact:hover {
+        background-color: #e6b325b9; }
+
+.sectionAreas .sectionAreas__titulo {
+  background-color: #e7e6e133;
+  text-align: center;
+  margin: 1rem; }
+
+.sectionAreas .sectionAreas__cards {
+  margin: 1rem;
+  margin-left: 2.5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .sectionAreas .sectionAreas__cards .sectionAreas__card {
+    text-decoration: none;
+    color: #000000a9;
+    background-color: #ffffff0e;
+    font-size: 1rem;
+    text-align: center;
+    height: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    transition: 0.8s; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card:hover {
+      transform: translate(-0.2rem, -0.1rem);
+      color: #b7950ba8; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card h4 {
+      padding: 0.5rem; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card p {
+      font-size: 0.7rem; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-previcional {
+      color: #0000009c; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-laboral {
+      color: #0000009c; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-familiar {
+      color: #0000009c; }
+    .sectionAreas .sectionAreas__cards .sectionAreas__card .icon-ver {
+      color: #0000009c; }
+
+/* CONTACTO */
+.section_contacto {
+  background-color: #f0a4001c;
+  padding: 2rem; }
+  .section_contacto .titulo_contacto {
+    padding: 1rem;
+    color: #ffffffb4;
+    text-align: center;
+    background-color: #00000031; }
+  .section_contacto .section__img {
+    background-image: url(../assets/imagenes/escritorio.jpg);
+    margin: 2rem;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    text-align: center; }
+    .section_contacto .section__img h2 {
+      padding-top: 5rem;
+      font-size: 1rem;
+      margin-top: 0.5rem; }
+    .section_contacto .section__img h3 {
+      font-size: 1rem; }
+
+.section__form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.303);
+  padding: 2rem; }
+  .section__form textarea {
+    margin-top: 2rem; }
+  .section__form .section__form__label {
     margin: 1rem;
-    background-color: rgba(0, 0, 0, 0.303);
-    padding: 2rem; }
-    .section__form textarea {
-      margin-top: 2rem; }
-    .section__form .section__form__label {
-      margin: 1rem;
-      color: white; }
-    .section__form input {
-      background-color: rgba(240, 255, 255, 0.603);
-      border-style: none; } }
+    color: white; }
+  .section__form input {
+    background-color: rgba(240, 255, 255, 0.603);
+    border-style: none; }
 
 .nosotras--firma {
   background-color: rgba(47, 47, 47, 0.46);
@@ -513,6 +464,122 @@
     background-attachment: fixed;
     object-fit: cover; }
 
+.sectionNoticia__noticia img {
+  display: none; }
+
+.bannerNov__conten {
+  background-color: rgba(170, 170, 170, 0.315);
+  height: 80vh;
+  width: 80%;
+  color: #b7950b9e;
+  transition: 0.8s; }
+  .bannerNov__conten:hover {
+    transform: translate(-0.2rem, -0.1rem);
+    color: rgba(251, 251, 251, 0.775);
+    background-color: rgba(53, 53, 53, 0.64); }
+  .bannerNov__conten .bannerNov__conten__text {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2rem; }
+    .bannerNov__conten .bannerNov__conten__text h1 {
+      margin-bottom: 5rem;
+      font-size: 5rem; }
+    .bannerNov__conten .bannerNov__conten__text p {
+      margin: 2rem;
+      font-size: 1.3rem;
+      font-family: "Roboto"; }
+    .bannerNov__conten .bannerNov__conten__text a {
+      bottom: 7rem;
+      right: -1rem;
+      padding: 0.8rem;
+      text-decoration: none;
+      background-color: aliceblue;
+      border-radius: 30%;
+      color: rgba(0, 0, 0, 0.545);
+      transition: 0.8s; }
+      .bannerNov__conten .bannerNov__conten__text a:hover {
+        transform: translate(0.2rem, 0.1rem);
+        color: #b7950ba8;
+        background-color: rgba(240, 248, 255, 0.687); }
+
+.sectionNoticias {
+  position: relative;
+  left: 4.5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem; }
+  .sectionNoticias .novedades_linck {
+    background-color: rgba(0, 0, 0, 0.181);
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    color: #444444;
+    transition: 0.8s; }
+    .sectionNoticias .novedades_linck:hover {
+      transform: translate(-0.2rem, -0.1rem);
+      background-color: rgba(0, 0, 0, 0.671);
+      color: #b7950ba8; }
+  .sectionNoticias .sectionNoticia__noticia {
+    border: 1px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.535);
+    margin: 1rem; }
+    .sectionNoticias .sectionNoticia__noticia .linckInteres {
+      border-color: aliceblue; }
+    .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--contenido {
+      overflow: auto;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--contenido p {
+        font-size: 1.3rem;
+        width: 55%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--contenido .sectionNoticias__noticia--contenido-img1 {
+        background-image: url(../assets/imagenes/perro-gatoWeb.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        object-fit: cover;
+        width: 45%; }
+      .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--contenido .sectionNoticias__noticia--contenido-img2 {
+        background-image: url(../assets/imagenes/jubilacion.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        object-fit: cover;
+        width: 45%; }
+      .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--contenido .sectionNoticias__noticia--contenido-img3 {
+        background-image: url(../assets/imagenes/indemnizacion.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        object-fit: cover;
+        width: 45%; }
+    .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--titulo {
+      margin-bottom: 2rem; }
+      .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--titulo h2 {
+        font-size: 2rem;
+        margin: 0.5rem;
+        border-bottom: rgba(0, 0, 0, 0.489) 0.5rem solid; }
+      .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--titulo h3 {
+        font-size: 0.8rem;
+        background-color: rgba(0, 0, 0, 0.303); }
+        .sectionNoticias .sectionNoticia__noticia .sectionNoticias__noticia--titulo h3 .sectionNoticias__noticia--titulo-autor {
+          font-size: 1rem; }
+
 .seccionContacto__info {
   background-color: rgba(59, 59, 59, 0.589);
   overflow: hidden;
@@ -535,152 +602,6 @@
   .seccionContacto__contacto p {
     font-size: 0.8rem;
     padding: 0.5rem; }
-
-@media (max-width: 500px) {
-  .bannerNov img {
-    display: none; }
-  .bannerNov {
-    background-image: linear-gradient(to right top, #0b0b0b9d, #2222228f, #3838389d, #4f4f4f93, #67676788), url(../assets/imagenes/novedades.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
-    text-align: center;
-    padding: 1.3rem;
-    position: relative;
-    color: #ffffff; }
-    .bannerNov .bannerNov__conten .bannerNov__conten__text h1 {
-      font-size: 2.4rem; }
-    .bannerNov .bannerNov__conten .bannerNov__conten__text p {
-      margin: 1rem;
-      font-size: 1.3rem; }
-    .bannerNov .bannerNov__conten .bannerNov__conten__text .bannerInicio__contact {
-      text-decoration: none;
-      font-size: 1.2rem;
-      border: 0.3rem;
-      color: rgba(19, 19, 19, 0.798);
-      background-color: aliceblue;
-      padding: 0.5rem; }
-  .sectionBusqueda {
-    position: relative;
-    top: -5rem; }
-    .sectionBusqueda .sectionBusqueda__text {
-      display: none; }
-    .sectionBusqueda .sectionBusqueda__input input {
-      height: 2rem;
-      border-radius: 10%; }
-    .sectionBusqueda .sectionBusqueda__input .sectionBusqueda__input--btnBusqueda {
-      width: 30%; }
-    .sectionBusqueda .sectionBusqueda__input .sectionBusqueda__input--busqueda {
-      width: 55%; }
-  .sectionNoticias {
-    background-color: rgba(47, 47, 47, 0.155);
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .sectionNoticias .sectionNoticia__noticia {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: aliceblue;
-      margin: 1rem;
-      padding: 1rem; }
-      .sectionNoticias .sectionNoticia__noticia img {
-        width: 100%; }
-    .sectionNoticias h5 {
-      padding: 1.5rem;
-      font-size: 1.6rem; } }
-
-@media (min-width: 501px) {
-  .navResp {
-    display: none; }
-  .sectionNoticia__noticia img {
-    display: none; }
-  .bannerNov {
-    background-color: #f0a40080;
-    display: flex;
-    flex-direction: row;
-    justify-content: none; }
-  .bannerNov__conten__img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    object-fit: cover;
-    height: 60vh;
-    width: 40%; }
-  .sub {
-    bottom: 7rem;
-    right: -1rem; }
-  .bannerNov__conten {
-    background-color: rgba(85, 85, 87, 0.75); }
-  .bannerNov__conten__text {
-    color: white;
-    text-align: center;
-    margin-top: 20%; }
-  .bannerNov__conten__text p {
-    margin: 2rem; }
-  .sectionBusqueda {
-    background-color: #ffc847da;
-    width: 60vh;
-    padding: 1rem; }
-  .sectionBusqueda__text {
-    background-color: #e9840173;
-    width: 20rem;
-    height: 5rem;
-    margin: 2rem;
-    position: absolute;
-    left: 80vh;
-    top: 20rem;
-    padding: 1rem;
-    text-align: center; }
-  .sectionNoticias {
-    position: relative;
-    left: 4.5%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem; }
-  .sectionNoticia__noticia {
-    border: 1px inset; }
-  .sectionNoticias div {
-    background-color: rgba(245, 245, 220, 0.521);
-    border-style: inset;
-    margin: 1rem; }
-  .sectionNoticias div h5 {
-    margin: 1em;
-    padding: 1em;
-    width: 94%;
-    height: 10rem;
-    font-size: larger;
-    color: rgba(0, 0, 0, 0.795); }
-  .sectionNoticias div p {
-    margin: 2rem;
-    text-align: center; }
-  .sectionNoticias__titulo1 {
-    background-image: url(../assets/imagenes/perro-gatoWeb.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    object-fit: cover; }
-  .sectionNoticias__titulo2 {
-    background-image: url(../assets/imagenes/jubilacion.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    object-fit: cover; }
-  .sectionNoticias__titulo3 {
-    background-image: url(../assets/imagenes/indemnizacion.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    object-fit: cover; } }
 
 @media (max-width: 500px) {
   .footer {

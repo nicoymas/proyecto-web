@@ -1,21 +1,25 @@
 @import"variables";
-@media  (max-width:500px){ 
+@media  (max-width:505px){ 
     
    
     // INDEX
     .header{
         height: 4rem;
-        background-color: #fdfdfd8d;
+        background-color: #fdfdfd31;
         .navbar{
+            .logo{
+                height: 3.5rem;
+                width: 3.5rem;
+            }
             .contentLinks{
                 display: none;
             } 
         }
         .navresp{
-            position: absolute;
-            height: 3rem;
-            background-color: #fdfdfd;
-            z-index: 10;
+            // position: absolute;
+            // height: 3rem;
+            background-color: #090808;
+            // z-index: 10;
            
             .contentLinks{
                 display: none;
@@ -24,64 +28,73 @@
         
     }
 }
-@media (min-width:501px){
+@media (min-width:506px){
     // INDEX
     .header{
         background-color:#fafafa7c;
         position: sticky;
         top: 0px;
         z-index: 10;
-        height: 2.5rem;
-        .logo{
-            position: relative;
-            bottom: 0.5rem;
-            height: 2.5rem;
+        height: 4rem;
+        .navbar{
+            .navResp{
+                display: none;
+            }
+            .logo{
+                position: relative;
+                bottom: 0.5rem;
+                height: 4rem;
+                width: 4rem;
+                
+            }
+            height: 3rem;
+            .contentLinks{
+                display: flex;
+                flex-direction: row;
+                justify-content: $center;
+                align-self: auto;
+                margin-bottom:0.5rem ;
+                
+                position: relative;
+                bottom: 0rem;
+                // background-color: #ffffff77;
+                font-size: 1.3rem;
+                .navbar__linck{
+                    text-decoration: none;
+                    color: black !important;;
+                    margin-left: 1em;
+                    position: relative;
+                    &:hover{
+                        &:after{
+                            transform:scaleX(1);
+                        }
+                    }
+                    &:after{
+                        content:'';
+                        width: 100%;
+                        height:1px;
+                        background-color: rgb(0, 0, 0);
+                        border-radius:4px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        transform:scaleX(0);
+                        transform-origin: left;
+                        transition: transform .35s ease;
+                    }
+                           
+                }
+                :root {
+                    --animate-delay: 0.2s;
+                }
+            }
             
         }
-        .contentLinks{
-            display: flex;
-            flex-direction: row;
-            justify-content: $center;
-            margin-bottom:0.5rem ;
-            position: relative;
-            bottom: 0rem;
-            background-color: #ffffff77;
-        }
-        .navResp{
-            display: none;
-        }
+      
+        
     }
     
 
-    .navbar{
-        height: 3rem;
-    }
-    .navbar__linck{
-        text-decoration: none;
-        color: black !important;;
-        margin-left: 1em;
-        position: relative;
-        &:hover{
-            &:after{
-                transform:scaleX(1);
-            }
-        }
-        &:after{
-            content:'';
-            width: 100%;
-            height:1px;
-            background-color: rgb(0, 0, 0);
-            border-radius:4px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            transform:scaleX(0);
-            transform-origin: left;
-            transition: transform .35s ease;
-        }
-               
-    }
-    :root {
-        --animate-delay: 0.2s;
-    }
+    
+    
  }
